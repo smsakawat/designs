@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* root modifications */
+
+html {
+  /* setting for making root font-size to 10px */
+  font-size: 62.5%;
+}
+
+/* variables */
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --neutral-blue: hsl(234, 12%, 34%);
+  --gray-one: hsl(229, 6%, 66%);
+  --gray-two: hsl(0, 0%, 98%);
+}
+
+body {
+  max-width: 80%;
+  min-height: 100vh;
+  color: var(--gray-one);
+}
+
+/* Header Styles */
+.main-title {
+  font-size: 52px;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: -2.25px;
+  margin-bottom: 4.8rem;
+}
+
+.sub-title {
+  font-weight: 600;
+  margin-bottom: 6.4rem;
+}
