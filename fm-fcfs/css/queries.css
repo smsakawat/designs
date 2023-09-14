@@ -1,0 +1,32 @@
+/* Media Queries */
+/* For tabs & big-screen mobiles*/
+@media only screen and (width <=1024px) {
+  .feature-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "supervisor builder"
+      "karma calculator";
+  }
+}
+
+/* For mobiles */
+@media only screen and (width <=576px) {
+  .main-title,
+  .sub-title {
+    font-size: 3.6rem;
+  }
+  .main-title {
+    margin-bottom: 1.6rem;
+  }
+  .sub-title {
+    margin-bottom: 2.4rem;
+  }
+  .feature-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "supervisor"
+      "builder"
+      "karma"
+      "calculator";
+  }
+}

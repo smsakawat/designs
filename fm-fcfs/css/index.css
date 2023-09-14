@@ -23,21 +23,119 @@ html {
 }
 
 body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
   max-width: 80%;
   min-height: 100vh;
-  color: var(--gray-one);
+  margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* Header Styles */
-.main-title {
-  font-size: 52px;
-  font-weight: 200;
+.header-section {
+  padding: 7rem 0 0;
   text-align: center;
-  letter-spacing: -2.25px;
-  margin-bottom: 4.8rem;
+}
+
+.main-title,
+.sub-title {
+  font-size: 52px;
+  line-height: 1.25;
+  color: var(--neutral-blue);
+  letter-spacing: -2.5px;
+}
+
+.main-title {
+  font-weight: 200;
+  margin-bottom: 2.4rem;
 }
 
 .sub-title {
   font-weight: 600;
-  margin-bottom: 6.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.main-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--gray-one);
+  margin-bottom: 6rem;
+}
+
+/* Feature Styles */
+
+.feature-section {
+  display: grid;
+  gap: 3.6rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    ". builder ."
+    "supervisor builder calculator"
+    "supervisor karma calculator"
+    ". karma .";
+}
+
+.feature-item {
+  padding: 3.2rem 2.4rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.15);
+}
+
+.feature-item img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.feature-item-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--neutral-blue);
+  margin-bottom: 1.2rem;
+}
+
+.feature-item-description {
+  color: var(--gray-one);
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-bottom: 3.2rem;
+}
+
+.feature-item-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.feature-item:first-of-type {
+  border-top: 5px solid var(--primary-cyan);
+  grid-area: supervisor;
+}
+
+.feature-item:nth-of-type(2) {
+  border-top: 5px solid var(--primary-red);
+  grid-area: builder;
+}
+
+.feature-item:nth-of-type(3) {
+  border-top: 5px solid var(--primary-orange);
+  grid-area: karma;
+}
+
+.feature-item:last-of-type {
+  border-top: 5px solid var(--primary-blue);
+  grid-area: calculator;
+}
+/* Footer Styles */
+.footer-section {
+  text-align: center;
+  color: var(--gray-one);
+  padding: 6.4rem 0;
+  font-size: 1.4rem;
+  grid-area: calculator;
+}
+
+.footer-section a {
+  color: var(--gray-one);
+  text-decoration: none;
 }
