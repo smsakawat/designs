@@ -2,7 +2,7 @@
 /* GENERAL REUSABLE STYLES */
 /************************/
 
-/* CONTAINERS*/
+/* CONTAINER STYLES*/
 
 .container {
   max-width: 120rem;
@@ -10,7 +10,7 @@
   padding-inline: 3.2rem;
 }
 
-/* HEADINGS */
+/* HEADING STYLES*/
 
 .heading-primary,
 .heading-secondary,
