@@ -1,0 +1,155 @@
+/*
+TYPOGRAPHY
+--Font sizes system(px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--Spacing system(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* Common Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #333;
+}
+
+html {
+  /* to calculate 1rem = 10px*/
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: "Space Mono", monospace;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.header-section {
+  width: 100%;
+}
+
+.logo-text {
+  font-family: "Inconsolata", monospace;
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -1.92px;
+}
+
+/* Main Styles */
+.main-section {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+}
+
+.img-container {
+  flex: 1 1 40%;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.content-container {
+  flex: 1 1 60%;
+}
+
+.main-title {
+  font-size: 6.4rem;
+  line-height: normal;
+  letter-spacing: -2.24px;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+
+.main-description {
+  color: #4f4f4f;
+  font-size: 2.4rem;
+  line-height: 1.7;
+  letter-spacing: -0.84px;
+  margin-bottom: 6.4rem;
+}
+
+.btn-primary {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #222222;
+  transform: scale(0.98);
+}
+
+/* Footer Styles */
+.footer-section {
+  text-align: center;
+}
+
+.footer-section p {
+  font-family: "Montserrat", sans-serif;
+  color: #bdbdbd;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.username {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 920px) {
+  .main-section {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .main-section {
+    gap: 6rem;
+  }
+
+  .img-container {
+    padding: 0 2rem;
+  }
+
+  .main-title {
+    font-size: 4.8rem;
+    line-height: 1.25;
+    margin-bottom: 2.4rem;
+  }
+
+  .main-description {
+    font-size: 1.8rem;
+    line-height: 1.25;
+    margin-bottom: 4.8rem;
+  }
+}
