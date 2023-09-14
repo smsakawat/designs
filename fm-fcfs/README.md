@@ -22,7 +22,7 @@ The challenge was to create a responsive Four Card Feature Section that allows u
 - [Live Site](https://fm-fcfs.netlify.app/)
 - [GitHub Repository](https://github.com/smsakawat/designs/tree/main/fm-fcfs)
 
-![Screenshot](./screenshot.jpg)
+![Screenshot](./images/ss.png)
 
 _Insert a screenshot of your solution here._
 
