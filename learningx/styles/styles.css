@@ -1,0 +1,332 @@
+/* COMMON STYLES */
+
+:root {
+  --primary-color: #0ea5e9;
+  --secondary-color: #777777;
+  --light-sky: #f0f9ff;
+  --dark-sky: #0284c7;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+P {
+  color: var(--secondary-color);
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  line-height: 1.6 !important;
+}
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.mb-8 {
+  margin-bottom: 8rem;
+}
+
+.primary-btn {
+  display: inline-block;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.2s ease-in;
+}
+
+.primary-btn:hover {
+  background-color: var(--dark-sky);
+}
+
+.link:link,
+.link:visited {
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.link:hover,
+.link:active {
+  color: #fff;
+}
+
+/* Component Styles */
+
+/* Header Styles */
+nav {
+  height: 80px;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: cursive;
+}
+.nav-item {
+  padding: 0.25rem 0.5rem;
+  margin-right: 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+}
+.nav-item:hover {
+  background-color: var(--light-sky);
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.nav-items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-btn {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.2s;
+}
+
+.register-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Slider Styles */
+
+.carousel {
+  position: relative !important;
+}
+.slider-item {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+  background-position: center;
+}
+.slider-one {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.76),
+      rgba(34, 34, 34, 0.76)
+    ),
+    url(../images/cover/cover-1.png);
+}
+.slider-two {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.76),
+      rgba(34, 34, 34, 0.76)
+    ),
+    url(../images/cover/cover-2.jpg);
+}
+
+.slider-three {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.76),
+      rgba(34, 34, 34, 0.76)
+    ),
+    url(../images/cover/cover-3.jpg);
+}
+.slider-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider-details p {
+  color: #f4f4f4;
+}
+
+/* Courses Styles */
+.courses {
+  gap: 1.5rem !important;
+}
+.course-item {
+  flex-shrink: 0;
+  flex-basis: 48%;
+}
+.img-container {
+  padding: 0 !important;
+}
+.img-container img {
+  border: none gray !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.course-price {
+  color: var(--primary-color);
+}
+
+.right-arrow::before {
+  font-weight: 600;
+  font-size: 20px;
+}
+.right-arrow {
+  transition: transform 0.4s ease-in-out;
+}
+
+.primary-btn:hover .right-arrow {
+  transform: translateX(12px);
+}
+/* Feature styles */
+.feature-content {
+  background-color: #f4fafd;
+  padding: 4rem 3rem;
+}
+/* Register Styles */
+.register-section {
+  background-color: var(--primary-color);
+}
+.register-section h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Successfull Students */
+.successfull-students {
+  gap: 12px;
+}
+.student-card {
+  flex-shrink: 0;
+  flex-basis: 24%;
+}
+
+/* Studetns feedback section */
+.student-feedback {
+  text-align: justify;
+}
+.author-student-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+.feedback-student-job {
+  font-size: 14px;
+}
+.slider-btn-right,
+.slider-btn-left {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-btn-left {
+  background-color: #bae6fd;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  cursor: not-allowed;
+}
+.slider-btn-left i:before {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+.slider-btn-right {
+  background-color: var(--primary-color);
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.slider-btn-right i:before {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Footer Syles */
+footer {
+  background-color: #161616;
+  padding: 5rem;
+}
+
+footer .social-icons {
+  gap: 14px;
+}
+footer .social-icons .icon {
+  font-size: 20px;
+  color: lightgray;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+footer .social-icons .icon:hover {
+  transform: scale(0.9);
+  color: rgb(173, 173, 173);
+}
+footer a:link,
+footer a:visited {
+  color: lightgray !important;
+  padding-bottom: 4px;
+  text-decoration: none;
+}
+footer a:hover {
+  color: lightgray !important;
+}
+footer p {
+  color: #d9dbe1;
+}
+
+/* Media Quries to overwrite some default bootstrap responsive sytles*/
+
+/* For tablets */
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #fff !important;
+    flex-direction: column;
+    padding: 1.5rem 0 2.5rem;
+  }
+  .navbar-toggler {
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  header h1 {
+    font-size: 44px;
+  }
+  header p {
+    text-align: justify;
+  }
+  .course-item {
+    flex-basis: 100%;
+  }
+  .student-card {
+    flex-basis: 48%;
+  }
+}
+
+/* For mobiles */
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #fff !important;
+    flex-direction: column;
+    padding: 1.5rem 0 2.5rem;
+  }
+  .navbar-toggler {
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  header h1 {
+    font-size: 44px;
+  }
+  header p {
+    text-align: justify;
+  }
+  .course-item {
+    flex-basis: 80%;
+    margin: 0 auto;
+  }
+  .student-card {
+    flex-basis: 80%;
+  }
+}
+
+/* THE END */

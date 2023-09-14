@@ -1,0 +1,357 @@
+/* main color: #1971c2 */
+/* gray color: #212529 */
+
+/****************
+ Common Styles
+ ****************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  color: #212529;
+  overflow-x: hidden;
+}
+section {
+  margin-bottom: 6rem;
+}
+h2 {
+  font-size: 42px;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 18px;
+  color: #707070;
+}
+.flex {
+  display: flex;
+  gap: 10px;
+}
+/****************
+ Component Styles
+ ****************/
+
+/* Header Styles */
+.header-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0.2) 100%);
+}
+.header-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.main-title {
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 1.05;
+  letter-spacing: -0.9px;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+.header-description {
+  line-height: 1.6;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: #f8f9fa;
+}
+.btn:link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3b5bdb;
+  padding: 1rem 2rem;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+.btn:visited {
+  text-decoration: none;
+  background-color: #3b5bdb;
+}
+.btn:hover {
+  background-color: #5c7cfa;
+}
+.header-btn:hover,
+.header-btn:active {
+  background-color: transparent;
+  border: 2px solid #3b5bdb;
+  transition: 0.5s;
+}
+
+/* Amount Styles */
+.amount-section {
+  width: 100%;
+  margin-bottom: 8rem;
+}
+.amount-heading {
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+.amount-description {
+  line-height: 1.2;
+  font-size: 18px;
+}
+.amount-part {
+  width: 60%;
+  margin: 0 auto;
+}
+.recommened-amounts {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.recommened-amounts div {
+  margin-bottom: 2.5rem;
+  border-radius: 5px;
+  background-color: #fafafa;
+  width: 136px;
+  height: 123px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.recommened-amounts .recommened-active-amount {
+  border: 2px solid #3b5bdb;
+  background-color: #edf2ff;
+}
+.custom-amount {
+  margin-bottom: 1.5rem;
+}
+.amount-form {
+  margin-bottom: 1.5rem;
+}
+.amount-field {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.75rem;
+  outline: none;
+  caret-color: #707479;
+}
+.amount-field:focus {
+  border-bottom: 2px solid #3b5bdb;
+  transition: 0.8s;
+}
+::placeholder {
+  color: #adb5bd;
+}
+/* Feature(Donate Plans) Styles */
+.plan-heading {
+  margin-bottom: 2.5rem;
+}
+.donate-plans {
+  display: flex;
+  gap: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  text-align: start;
+}
+.donate-plans h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.donate-plans div {
+  padding: 3rem 1.5rem;
+  border-radius: 5px;
+}
+.donate-plans div:first-child {
+  background: #edf2ff;
+}
+.donate-plans div:nth-child(2) {
+  background: #fff5f5;
+}
+.donate-plans div:last-child {
+  background: #fff9db;
+}
+.donate-plans img {
+  width: 53px;
+  height: 53px;
+  margin-bottom: 2rem;
+}
+/* Activity Part */
+.gallery-section {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.gallery-heading {
+  margin-bottom: 2.5rem;
+}
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery {
+  display: flex;
+  gap: 10px;
+}
+.gallery img {
+  width: 240px;
+}
+.gallery-part {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gallery div:first-child img:last-child {
+  width: 200px;
+  align-self: flex-end;
+}
+.gallery div:nth-child(2) img {
+  width: 320px;
+  height: 200px;
+}
+.gallery div:nth-child(2) img:last-child {
+  height: 160px;
+}
+.gallery div:last-child > div img {
+  width: 104px;
+  height: 170px;
+}
+.gallery div:last-child > div img:last-child {
+  height: 140px;
+}
+
+/* Testimonial Styles */
+.testimonial-section {
+  text-align: start;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.75rem solid #3b5bdb;
+  border-radius: 4px;
+  margin-bottom: 6rem;
+}
+.testimonial-section img {
+  width: 200px;
+  height: 200px;
+}
+.testimonial {
+  padding: 1.5rem 1rem;
+}
+
+.testimonial-section h2 {
+  font-size: 24px;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.testiominal-author {
+  font-size: 16px;
+}
+.testimonial-section small {
+  font-size: 12px;
+  color: #868e96;
+}
+/* Subscribe Syles */
+.subscribe-heading {
+  margin-bottom: 2.5rem;
+}
+.subscribe-form {
+  background: #d0ebff;
+  width: 60%;
+  margin: 0 auto;
+  padding: 4rem 6rem;
+}
+.subscribe-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-form form input[type="email"] {
+  border: none;
+  outline: none;
+  background: #d9d9d9;
+  border-radius: 5px 0px 0px 5px;
+  padding: 1rem 5rem 1rem 1.25rem;
+}
+.subscribe-form form input[type="email"]::placeholder {
+  color: #adb5bd;
+}
+.subscribe-btn {
+  background-color: #3b5bdb;
+  padding: 0.85rem 2rem;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  margin-left: -8px;
+  cursor: pointer;
+}
+.subscribe-btn:hover {
+  background-color: #121212;
+  transition: 0.5s;
+}
+/* Statistic Styles */
+.statistics-section {
+  width: 60%;
+  margin: 0 auto 6rem;
+}
+.statistics-heading {
+  margin-bottom: 2.5rem;
+}
+.statistic-items {
+  display: flex;
+  justify-content: space-between;
+}
+.statistic-items h3 {
+  color: #3b5bdb;
+  font-size: 42px;
+  font-weight: 600;
+}
+.statistic-items p {
+  color: #adb5bd;
+  text-align: start;
+  font-size: 14px;
+}
+/* Footer Styles */
+footer {
+  width: 100%;
+  background-color: #0b0d17;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ced4da;
+}
+.portion-color {
+  color: #fff;
+}
+footer h2 {
+  font-size: 36px;
+  color: #3b5bdb;
+}
+footer blockquote {
+  color: #adb5bd;
+}
+footer .author-name {
+  text-align: start;
+  font-size: 12px;
+  color: #868e96;
+}
