@@ -44,7 +44,7 @@ body {
   font-size: 52px;
   line-height: 1.25;
   color: var(--neutral-blue);
-  letter-spacing: -2.5px;
+  letter-spacing: -0.5px;
 }
 
 .main-title {

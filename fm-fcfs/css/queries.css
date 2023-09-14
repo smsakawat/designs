@@ -11,9 +11,12 @@
 
 /* For mobiles */
 @media only screen and (width <=576px) {
+  .main-container {
+    max-width: 90%;
+  }
   .main-title,
   .sub-title {
-    font-size: 3.6rem;
+    font-size: 3rem;
   }
   .main-title {
     margin-bottom: 1.6rem;
