@@ -20,11 +20,21 @@
   </h3>
 </div>
 
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](../404-not-found-dc/assets/ss.png)
 
 This is a simple 404 Not Found page created as a solution to a challenge from [DevChallenges](https://devchallenges.io/challenges). The challenge required building a responsive 404 page design using HTML and CSS.
 
@@ -37,11 +47,8 @@ You can see the live demo of the project [here](https://404-dc.netlify.app/).
 - HTML
 - CSS
 
-## Acknowledgements
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-
 ## Contact
 
 - GitHub [@smsakawat](https://github.com/smsakawat)
+- LinkedIn [@sakawat](https://www.linkedin.com/in/sakawat/)
 - Twitter [@sakawathossain\_](https://twitter.com/sakawathossain_)
