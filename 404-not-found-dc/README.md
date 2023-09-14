@@ -26,8 +26,6 @@
 
 - [Overview](#overview)
   - [Built With](#built-with)
-- [Features](#features)
-- [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
