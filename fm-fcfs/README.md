@@ -24,7 +24,7 @@ The challenge was to create a responsive Four Card Feature Section that allows u
 
 ![Screenshot](./images/ss.png)
 
-_Insert a screenshot of your solution here._
+
 
 ## Built With
 
@@ -34,10 +34,7 @@ _Insert a screenshot of your solution here._
 
 ## What I Learned
 
-In this project, I reinforced my knowledge of HTML, CSS, and responsive design. Some key takeaways include:
-
-- Effective use of CSS Grid with new features for creating responsive layouts.
-- Utilizing CSS custom properties (variables) for maintaining a consistent design.
+In this project, I reinforced my knowledge of HTML, CSS, and responsive design, especially the effective use of CSS Grid with new features for creating responsive layouts
 
 ## Acknowledgments
 
