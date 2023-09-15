@@ -33,7 +33,7 @@
 
 ## Overview
 
-![screenshot](../images/ss.jpeg)
+![screenshot](./images/ss.jpeg)
 
 ### Description
 
