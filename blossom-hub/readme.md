@@ -1,6 +1,6 @@
 # Blossom Hub - Flower Responsive Landing Page
 
-![screenshot](./assets/ss.jpeg)
+![screenshot](./assets/ss.png)
 
 ## Overview
 

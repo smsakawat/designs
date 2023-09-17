@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,6 @@
 }
 
 html {
-  /* now, by default font-size will be 10px */
   font-size: 62.5%;
 }
 
@@ -312,6 +312,7 @@ body {
     flex-wrap: wrap;
   }
 }
+
 @media only screen and (max-width: 576px) {
   .hide {
     display: none;
@@ -356,3 +357,5 @@ body {
     padding: 8rem;
   }
 }
+
+/*  THE END */
