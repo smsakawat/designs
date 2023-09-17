@@ -1,4 +1,4 @@
-# Blossom Hub - Flower Responsive Landing Page
+# Blossom Hub - Flower Shop Landing Page
 
 ![screenshot](./assets/ss.png)
 
