@@ -12,6 +12,7 @@ html {
 body {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 /* header styles */
@@ -67,7 +68,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 1.5rem;
+  gap: 2.4rem;
 }
 
 .featured-flowers .featured-flower {
@@ -111,13 +112,17 @@ body {
 
 /* services styles */
 .services-section {
-  padding: 5rem 0;
+  padding: 5rem 2.4rem;
   display: flex;
   gap: 3rem;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(39, 39, 39, 0.05);
   border-radius: 8px;
+}
+
+.service {
+  flex: 1 1 32%;
 }
 
 .services-section img {
@@ -136,8 +141,9 @@ body {
   background-color: rgba(229, 84, 115, 0.05);
   display: flex;
   justify-content: space-evenly;
+  gap: 3.2rem;
   align-items: center;
-  padding: 6rem 0;
+  padding: 6rem 2.4rem;
   margin-bottom: 9.6rem;
 }
 
@@ -160,13 +166,12 @@ body {
 /* best sales styles */
 .best-sales-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   gap: 2.4rem;
+  justify-content: space-between;
 }
 
 .flower {
-  flex-grow: 1;
+  flex: 1 1 22%;
   border-radius: 5px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
   text-align: center;
@@ -220,21 +225,12 @@ body {
   background-color: #d95353;
 }
 
-/* @media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .flower {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-} */
-
 /* instagram section */
 .insta-contents {
   display: flex;
-  gap: 1.5rem;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .insta-contents img {
@@ -244,8 +240,8 @@ body {
 /* cta styles */
 .cta-section {
   background-image: url(../assets/cta-bg.png);
+  background-repeat: no-repeat;
   max-width: 75%;
-  justify-content: center;
   margin: 0 auto 9.6rem auto;
   padding: 10rem 9.6rem;
   border-radius: 8px;
@@ -262,7 +258,7 @@ body {
 .cta-form {
   width: 100%;
   display: flex;
-  gap: 1.6rem;
+  gap: 2.4rem;
 }
 
 .cta-section input[type="email"] {
@@ -304,4 +300,59 @@ body {
 .footer-copyright {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.4);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  .header-section,
+  .featured-flowers,
+  .services-section,
+  .signup-section,
+  .insta-contents {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hide {
+    display: none;
+  }
+
+  .header-section {
+    flex-direction: column;
+    padding: 5rem 3rem 0;
+    gap: 3.6rem;
+  }
+
+  .banner {
+    padding: 0;
+  }
+
+  .main-title {
+    font-size: 5.2rem;
+  }
+
+  .header-section,
+  .container,
+  .cta-section {
+    margin-bottom: 8rem;
+  }
+
+  .featured-flowers,
+  .services-section,
+  .signup-section,
+  .best-sales-container,
+  .insta-contents,
+  .cta-form {
+    flex-direction: column;
+  }
+
+  .cta-section {
+    max-width: 100%;
+    margin: 0 2.4rem 8rem;
+    padding: 6.4rem 3.2rem;
+  }
+
+  .footer-section {
+    padding: 8rem;
+  }
 }
