@@ -3,13 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interior Consultant</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <title>Nexa Interiors</title>
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header">
       <div class="logo">
         <p>Nexa Interiors</p>
       </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-list-item"><a href="#">Home</a></li>
+          <li class="main-nav-list-item"><a href="#">Collection</a></li>
+          <li class="main-nav-list-item"><a href="#">About</a></li>
+          <li class="main-nav-list-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    <!-- Main Section -->
+    <main>
+      <section class="section-hero">
+        <div class="hero-content-box">
+          <h1 class="heading-primary">Modern Interior</h1>
+          <p class="hero-description">
+            A full-service residential & commercial interior design and staging
+            company offering professional organizing and eco-services.
+          </p>
+          <div class="btn-box">
+            <a href="#" class="btn-primary">Read more</a>
+            <ion-icon name="arrow-forward-outline" class="btn-icon"></ion-icon>
+          </div>
+        </div>
+        <div class="hero-img-box">
+          <img
+            src="assets/banner.png"
+            alt="Showing creative interior design in a room"
+          />
+          <div class="interior-designer">
+            <img
+              src="assets/avatar"
+              alt="Designer of the creative interior design"
+            />
+            <div class="designer-info">
+              <p class="designer-name">Aliza Webber</p>
+              <p>Interior designer</p>
+              <p>Designed in 2023 by Aliza Webber</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <!-- <footer class="footer">
+      <p>
+        created by <span class="username">smsakawat</span> - devChallenges.io
+      </p>
+    </footer> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
