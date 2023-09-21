@@ -2,7 +2,7 @@
 const navBtnEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
-// Add listerner on menu button
+// Add Listener on menu button
 navBtnEl.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });

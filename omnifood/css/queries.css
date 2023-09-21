@@ -1,4 +1,4 @@
-/* 'em' and 'rem' don't depend on root element(html)'s font-size in media queries. It'sll be always 1rem=1rem=16px, which is the default roo elment's font-size of most browsers. So we'll use them based on 16px. 'rem' unit has some issues in media queries for browser compatibility. So it's safer to use 'em' unit here. */
+/* 'em' and 'rem' don't depend on root element(html)'s font-size in media queries. It'll be always 1rem=1rem=16px, which is the default root element's font-size of most browsers. So we'll use them based on 16px. 'rem' unit has some issues in media queries for browser compatibility. So it's safer to use 'em' unit here. */
 
 /************************/
 /* BELOW 1344 (Smaller desktops) */
@@ -28,7 +28,6 @@
 @media (max-width: 75em) {
   html {
     /* Resizing font-size to 9px */
-
     font-size: 56.25%;
   }
 
@@ -74,7 +73,6 @@
 @media (max-width: 59em) {
   html {
     /* 8px */
-
     font-size: 50%;
   }
 
@@ -132,10 +130,6 @@
   .btn--form {
     margin-top: 1.6rem;
     padding: 1.6rem;
-  }
-
-  .grid--footer {
-    column-gap: 4.8rem;
   }
 
   /* MOBILE NAVIGATION */
@@ -210,9 +204,9 @@
 
 @media (max-width: 48em) {
   .logos {
-    gap: 2.4rem;
+    gap: 3.2rem;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
   }
 
   .logos img {
@@ -242,7 +236,7 @@
   }
 
   .cta-text-box {
-    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+    padding: 3.2rem 4.8rem 4.8rem;
   }
 
   .grid--footer {
@@ -262,7 +256,7 @@
 }
 
 /************************/
-/* BELOW 592px (Medium and Smaller Phones) */
+/* BELOW 592px (Mobile Phones) */
 /************************/
 
 @media (max-width: 37em) {
@@ -291,7 +285,7 @@
   }
 
   .logos img {
-    height: 1.2rem;
+    height: 1.4rem;
   }
 
   .section-how {
@@ -352,7 +346,7 @@
   }
 
   .pricing-plan--complete::after {
-    right: -13.5%;
+    right: -13%;
   }
 }
 

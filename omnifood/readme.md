@@ -1,15 +1,15 @@
-# Omnifood
+# Omnifood - AI-Powered Meal Delivery Service Landing Page
 
-Omnifood is a meal delivery service that provides healthy and delicious meals straight to your door. You can sign up for a personalized food subscription that's tailored to your tastes and nutrition needs, and have your meals delivered to you every day of the year.
+![screenshot](./img/omnifood-ss.png)
 
-## Technologies Used
+## Overview
 
-This website was created using the following technologies:
+Omnifood is an AI-powered meal delivery service landing page. It showcases the future of meal delivery services with a modern design and user-friendly experience.
 
-- HTML
-- CSS
-- JavaScript
+**Live Website**: [Omnifood Live Demo](https://omnifood-saka.netlify.app/)
 
-## Visit the Site
+## Contact
 
-To view the Omnifood website, visit: https://omnifood-saka.netlify.app/
+- GitHub: [@smsakawat](https://github.com/smsakawat)
+- LinkedIn: [@sakawat](https://www.linkedin.com/in/sakawat/)
+- Twitter: [@sakawathossain\_](https://twitter.com/sakawathossain_)
