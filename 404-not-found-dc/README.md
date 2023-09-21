@@ -20,13 +20,6 @@
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
-## Table of Contents
-
-- [Overview](#overview)
-  - [Built With](#built-with)
-- [Contact](#contact)
 
 <!-- OVERVIEW -->
 
@@ -34,19 +27,8 @@
 
 ![screenshot](../404-not-found-dc/assets/ss.png)
 
-This is a simple 404 Not Found page created as a solution to a challenge from [DevChallenges](https://devchallenges.io/challenges). The challenge required building a responsive 404 page design using HTML and CSS.
+This is a simple 404 Not Found page created as a solution to a challenge from [DevChallenges](https://devchallenges.io/challenges). The challenge required building a responsive 404-page design using HTML and CSS.
 
 ### Demo
 
-You can see the live demo of the project [here](https://404-dc.netlify.app/).
-
-### Built With
-
-- HTML
-- CSS
-
-## Contact
-
-- GitHub [@smsakawat](https://github.com/smsakawat)
-- LinkedIn [@sakawat](https://www.linkedin.com/in/sakawat/)
-- Twitter [@sakawathossain\_](https://twitter.com/sakawathossain_)
+Live demo of the solution [here](https://404-dc.netlify.app/).
