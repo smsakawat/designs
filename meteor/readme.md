@@ -1,4 +1,4 @@
-# Meteor Hosting - Elevate Your Web Hosting Experience
+# Meteor
 
 ![Meteor Hosting](./images/sos-1.png)
 
@@ -6,6 +6,6 @@
 
 ## Overview
 
-Meteor responsive web app design for a seamless cloud hosting service provider.
+Meteor responsive web app design for a cloud hosting service provider organization.
 
 **Live Website**: [Meteor Hosting Live Demo](https://meteor-saka.netlify.app/)
