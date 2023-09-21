@@ -41,15 +41,4 @@ This is my solution for the "My Team Page" challenge from [DevChallenges](https:
 
 ### Live Demo
 
-You can see the live demo of the project [here](https://my-team-page-dc.netlify.app/).
-
-### Built With
-
-- HTML5
-- CSS3
-
-## Contact
-
-- GitHub [@smsakawat](https://github.com/smsakawat)
-- LinkedIn [@sakawat](https://www.linkedin.com/in/sakawat/)
-- Twitter [@sakawathossain\_](https://twitter.com/sakawathossain_)
+Live demo of the project [here](https://my-team-page-dc.netlify.app/).
