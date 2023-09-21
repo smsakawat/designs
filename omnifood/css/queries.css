@@ -1,7 +1,7 @@
 /* 'em' and 'rem' don't depend on root element(html)'s font-size in media queries. It'll be always 1rem=1rem=16px, which is the default root element's font-size of most browsers. So we'll use them based on 16px. 'rem' unit has some issues in media queries for browser compatibility. So it's safer to use 'em' unit here. */
 
 /************************/
-/* BELOW 1344 (Smaller desktops) */
+/* BELOW 1344px (Smaller desktops) */
 /************************/
 
 @media (max-width: 84em) {
@@ -152,7 +152,7 @@
     justify-content: center;
     align-items: center;
     transform: translateX(100%);
-    transition: all 0.5s ease-out;
+    transition: all 0.4s ease-out;
 
     /* Hide Navigation */
     /* Won's use 'display' property as it doesn't allow any transition */

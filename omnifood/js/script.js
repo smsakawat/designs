@@ -48,7 +48,7 @@ document.body.addEventListener("click", function (event) {
 const observer = new IntersectionObserver(
   (entries) => {
     const entObj = entries[0];
-    console.log(entObj);
+    console.log(entObj.isIntersecting);
     if (!entObj.isIntersecting) {
       document.body.classList.add("sticky");
     } else if (entObj.isIntersecting) {
