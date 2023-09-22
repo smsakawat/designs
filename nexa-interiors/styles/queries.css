@@ -76,12 +76,16 @@
     overflow-x: hidden;
   }
 
+  .header {
+    padding: 2.4rem 3.2rem;
+  }
+
   .main-nav-list-item {
     font-size: 3.2rem;
   }
 
   .section-hero {
-    padding: 1.6rem 3.2rem 8rem;
+    padding: 2.4rem 3.2rem 8rem;
     gap: 4.8rem;
   }
 

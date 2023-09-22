@@ -22,4 +22,5 @@
 
 ## Overview
 
-![screenshot](URL_TO_YOUR_SCREENSHOT)
+![screenshot](./assets/ss-desk.png)
+![screenshot](./assets/ss-mob.png)
