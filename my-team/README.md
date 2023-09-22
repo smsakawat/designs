@@ -1,7 +1,7 @@
 <h1 align="center">My Team Page</h1>
 
 <div align="center">
-   Solution for a challenge from <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U" target="_blank">DevChallenges</a>.
+   Solution for the "My-Team" challenge from <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U" target="_blank">DevChallenges</a>.
 </div>
 
 <div align="center">
@@ -20,24 +20,10 @@
   </h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
-## Table of Contents
-
-- [Overview](#overview)
-  - [Description](#description)
-  - [Built With](#built-with)
-- [Contact](#contact)
-
-<!-- OVERVIEW -->
 
 ## Overview
 
 ![screenshot](./images/ss.jpeg)
-
-### Description
-
-This is my solution for the "My Team Page" challenge from [DevChallenges](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U). The challenge required building a web page that showcases a team's information following a given design.
 
 ### Live Demo
 
