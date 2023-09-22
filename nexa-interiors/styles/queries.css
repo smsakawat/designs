@@ -1,14 +1,16 @@
-/* Mobile Devices */
-@media only screen and (max-width: 576px) {
+/* Tablets */
+@media only screen and (max-width: 1024px) {
   html {
-    font-size: 50%;
-    overflow-x: hidden;
+    font-size: 56.25%;
+  }
+
+  .header {
+    position: relative;
   }
 
   .section-hero {
-    padding: 8rem 3.2rem;
     grid-template-columns: 1fr;
-    gap: 6.4rem;
+    gap: 8rem;
   }
 
   .hero-img-box {
@@ -16,36 +18,35 @@
   }
 
   .hero-img-box > img {
-    width: 100%;
+    width: 75%;
   }
 
-  .header {
-    position: relative;
+  .btn-mobile-nav {
+    display: block;
   }
 
   .main-nav {
+    z-index: 99999;
     position: absolute;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.83);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
     width: 100%;
     height: 100vh;
-    z-index: 999;
-    transform: translateX(100%);
-    transition: all 0.4s ease-in;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease-in;
   }
 
   .mobile-nav-open .main-nav {
     transform: translateX(0);
-  }
-
-  .mobile-nav-open .main-nav {
-    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .mobile-nav-open .icon-menu {
@@ -60,29 +61,52 @@
     flex-direction: column;
   }
 
-  .btn-mobile-nav {
-    display: block;
+  .interior-designer-details {
+    padding: 1.6rem 2.4rem 1.6rem;
+    right: 15%;
+    top: 85%;
+    max-width: 40rem;
+  }
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 592px) {
+  html {
+    font-size: 50%;
+    overflow-x: hidden;
   }
 
-  /* .mobile-nav-open .icon-close {
-    display: block;
-  } */
+  .main-nav-list-item {
+    font-size: 3.2rem;
+  }
+
+  .section-hero {
+    padding: 1.6rem 3.2rem 8rem;
+    gap: 4.8rem;
+  }
+
+  .heading-primary {
+    font-size: 4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .hero-description {
+    font-size: 2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .hero-img-box > img {
+    width: 95%;
+  }
 
   .interior-designer-details {
-    background: #181719;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: absolute;
-    right: 10%;
-    top: 70%;
-    padding: 1.6rem 3.2rem 2.4rem;
-    max-width: 30rem;
+    padding: 1.6rem 2.4rem 1.6rem;
+    right: 8%;
+    top: 90%;
+    max-width: 35rem;
   }
 
   .interior-designer-details p:last-child {
     font-size: 1.8rem;
-  }
-
-  .footer {
-    display: none;
   }
 }
