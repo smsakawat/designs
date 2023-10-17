@@ -95,7 +95,7 @@ body {
   font-weight: 400;
   color: var(--primary-grey-color);
 
-  /* This won't work for elements that are absolutely positioned with nore relatively parent element. */
+  /* This won't work for elements that are absolutely positioned with not relatively parent element. */
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
