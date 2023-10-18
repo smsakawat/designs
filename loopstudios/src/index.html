@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,29 +7,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link href="/dist/output.css" rel="stylesheet" />
     <title>loopstudios</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Hero Section -->
-    <section
-      class="hero bg-no-repeat md:bg-cover bg-center px-6 py-12 min-h-screen"
-    >
-      <div class="container max-w-6xl mx-auto">
+    <section class="hero bg-center bg-no-repeat md:bg-cover">
+      <div class="container mx-auto mb-32 max-w-6xl px-6 py-12">
         <header class="flex items-center justify-between">
           <img src="../images/logo.svg" alt="logo" />
           <nav>
             <ul
-              class="font-alata font-bold flex items-center gap-4 md:gap-8 text-white list-none"
+              class="flex list-none items-center gap-4 font-alata font-bold text-white md:gap-8"
             >
               <li class="group">
                 <a href="#"
                   >About
                   <div
-                    class="mx-1 border-b border-white opacity-0 group-hover:opacity-100 transition duration-200"
+                    class="mx-1 border-b border-white opacity-0 transition duration-200 group-hover:opacity-100"
                   ></div>
                 </a>
               </li>
@@ -37,7 +35,7 @@
                 <a href="#">
                   Careers
                   <div
-                    class="mx-1 border-b border-white opacity-0 group-hover:opacity-100 transition duration-200"
+                    class="mx-1 border-b border-white opacity-0 transition duration-200 group-hover:opacity-100"
                   ></div>
                 </a>
               </li>
@@ -45,7 +43,7 @@
                 <a href="#">
                   Events
                   <div
-                    class="mx-1 border-b border-white opacity-0 group-hover:opacity-100 transition duration-200"
+                    class="mx-1 border-b border-white opacity-0 transition duration-200 group-hover:opacity-100"
                   ></div>
                 </a>
               </li>
@@ -53,7 +51,7 @@
                 <a href="#">
                   Products
                   <div
-                    class="mx-1 border-b border-white opacity-0 group-hover:opacity-100 transition duration-200"
+                    class="mx-1 border-b border-white opacity-0 transition duration-200 group-hover:opacity-100"
                   ></div>
                 </a>
               </li>
@@ -61,7 +59,7 @@
                 <a href="#">
                   Support
                   <div
-                    class="mx-1 border-b border-white opacity-0 group-hover:opacity-100 transition duration-200"
+                    class="mx-1 border-b border-white opacity-0 transition duration-200 group-hover:opacity-100"
                   ></div>
                 </a>
               </li>
@@ -71,9 +69,34 @@
           <!-- mobile menu -->
         </header>
         <div
-          class="p-4 md:p-12 my-32 border-2 border-white max-w-lg text-4xl md:text-5xl text-white font-thin tracking-widest"
+          class="my-32 max-w-lg border-2 border-white p-4 text-4xl font-light uppercase text-white md:p-10 md:text-6xl"
         >
-          IMPRESSIVE EXPERIENCES THAT DELIVER
+          Impressive Experiences That Deliver
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section id="feature">
+      <div class="container relative mx-auto mb-32 max-w-6xl px-6 md:px-0">
+        <img
+          src="../images/desktop/image-interactive.jpg"
+          alt="feature image"
+        />
+        <div
+          class="mt-12 flex flex-col items-center bg-white text-gray-900 md:absolute md:right-0 md:top-44 md:mt-0 md:block md:py-20 md:pl-20"
+        >
+          <h2
+            class="mb-6 max-w-lg text-center text-4xl font-light md:text-left md:text-5xl"
+          >
+            THE LEADER IN INTERACTIVE VR
+          </h2>
+          <p class="max-w-md text-center font-light md:text-left">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
         </div>
       </div>
     </section>
