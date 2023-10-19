@@ -13,7 +13,7 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>loopstudios</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body>
     <!-- Hero Section -->
     <section class="hero bg-center bg-no-repeat md:bg-cover">
       <div class="container mx-auto mb-32 max-w-6xl px-6 py-12">
@@ -21,7 +21,7 @@
           <img src="../images/logo.svg" alt="logo" />
           <nav>
             <ul
-              class="flex list-none items-center gap-4 font-alata font-bold text-white md:gap-8"
+              class="hidden list-none items-center gap-4 font-alata font-bold text-white md:flex md:flex-row md:gap-8"
             >
               <li class="group">
                 <a href="#"
@@ -78,7 +78,7 @@
 
     <!-- Feature Section -->
     <section id="feature">
-      <div class="container relative mx-auto mb-32 max-w-6xl px-6 md:px-0">
+      <div class="relative mx-auto mb-32 max-w-6xl px-6 md:px-0">
         <img
           src="../images/desktop/image-interactive.jpg"
           alt="feature image"
@@ -87,9 +87,9 @@
           class="mt-12 flex flex-col items-center bg-white text-gray-900 md:absolute md:right-0 md:top-44 md:mt-0 md:block md:py-20 md:pl-20"
         >
           <h2
-            class="mb-6 max-w-lg text-center text-4xl font-light md:text-left md:text-5xl"
+            class="mb-6 max-w-lg text-center text-4xl font-light uppercase md:text-left md:text-5xl"
           >
-            THE LEADER IN INTERACTIVE VR
+            The Leader In Interactive VR
           </h2>
           <p class="max-w-md text-center font-light md:text-left">
             Founded in 2011, Loopstudios has been producing world-class virtual
@@ -98,6 +98,21 @@
             digital experiences that bind to their brand.
           </p>
         </div>
+      </div>
+    </section>
+
+    <!-- Creations Section -->
+    <section id="feature">
+      <div class="mx-auto mb-32 max-w-6xl px-6">
+        <!-- Creations Header -->
+        <div class="mb-20 flex justify-center text-gray-900 md:justify-between">
+          <h2 class="text-4xl font-light uppercase tracking-wider md:text-5xl">
+            Our Creations
+          </h2>
+          <button class="btn hidden md:block">See All</button>
+        </div>
+
+        <!-- Creations -->
       </div>
     </section>
   </body>
