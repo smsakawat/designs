@@ -13,11 +13,11 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Loopstudios</title>
   </head>
-  <body>
+  <body class="relative">
     <!-- Hero Section -->
     <section class="hero bg-center bg-no-repeat md:bg-cover">
       <div class="container mx-auto mb-32 max-w-6xl px-6 py-12">
-        <header class="flex items-center justify-between">
+        <header id="header" class="flex items-center justify-between">
           <img src="../images/logo.svg" alt="logo" />
           <nav>
             <ul
@@ -64,9 +64,62 @@
                 </a>
               </li>
             </ul>
-            <!-- hamburger menu -->
           </nav>
-          <!-- mobile menu -->
+
+          <!-- Mobile Navigation -->
+          <nav class="mobile-nav md:hidden">
+            <ul
+              class="flex list-none flex-col items-center justify-center gap-4 font-alata text-xl font-medium text-white md:gap-8 md:text-base"
+            >
+              <li class="group">
+                <a href="#"
+                  >About
+                  <div
+                    class="mx-1 border-b border-white opacity-0 transition duration-200 group-hover:opacity-100"
+                  ></div>
+                </a>
+              </li>
+              <li class="group">
+                <a href="#">
+                  Careers
+                  <div
+                    class="mx-1 border-b border-white opacity-0 transition duration-200 group-hover:opacity-100"
+                  ></div>
+                </a>
+              </li>
+              <li class="group">
+                <a href="#">
+                  Events
+                  <div
+                    class="mx-1 border-b border-white opacity-0 transition duration-200 group-hover:opacity-100"
+                  ></div>
+                </a>
+              </li>
+              <li class="group">
+                <a href="#">
+                  Products
+                  <div
+                    class="mx-1 border-b border-white opacity-0 transition duration-200 group-hover:opacity-100"
+                  ></div>
+                </a>
+              </li>
+              <li class="group">
+                <a href="#">
+                  Support
+                  <div
+                    class="mx-1 border-b border-white opacity-0 transition duration-200 group-hover:opacity-100"
+                  ></div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Hamburger Menu -->
+          <button id="btn-menu" class="btn-menu md:hidden">
+            <div class="hamburger-top"></div>
+            <div class="hamburger-middle"></div>
+            <div class="hamburger-bottom"></div>
+          </button>
         </header>
         <div
           class="my-32 max-w-lg border-2 border-white p-4 text-4xl font-light uppercase text-white md:p-10 md:text-6xl"
@@ -339,22 +392,38 @@
             <ul class="flex items-center gap-4">
               <li>
                 <a href="#">
-                  <img src="../images/icon-facebook.svg" alt="" />
+                  <img
+                    src="../images/icon-facebook.svg"
+                    alt=""
+                    class="transition duration-300 hover:scale-90"
+                  />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="../images/icon-instagram.svg" alt="" />
+                  <img
+                    src="../images/icon-instagram.svg"
+                    alt=""
+                    class="transition duration-300 hover:scale-90"
+                  />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="../images/icon-twitter.svg" alt="" />
+                  <img
+                    src="../images/icon-twitter.svg"
+                    alt=""
+                    class="transition duration-300 hover:scale-90"
+                  />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="../images/icon-pinterest.svg" alt="" />
+                  <img
+                    src="../images/icon-pinterest.svg"
+                    alt=""
+                    class="transition duration-300 hover:scale-90"
+                  />
                 </a>
               </li>
             </ul>
@@ -366,5 +435,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
