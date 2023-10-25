@@ -468,10 +468,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.relative {
-  position: relative;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -555,25 +551,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Open Sans, sans-serif;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
-.tracking-wide {
-  letter-spacing: 0.025em;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.transition {
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 .main-nav-link {
@@ -607,7 +592,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .main-nav-link:hover {
   --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
 .main-nav-link:hover::before {
@@ -621,80 +606,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
-.before\:absolute::before {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.before\:inset-x-0::before {
-  content: var(--tw-content);
-  left: 0px;
-  right: 0px;
-}
-
-.before\:-bottom-1::before {
-  content: var(--tw-content);
-  bottom: -0.25rem;
-}
-
-.before\:z-10::before {
-  content: var(--tw-content);
-  z-index: 10;
-}
-
-.before\:h-0\.5::before {
-  content: var(--tw-content);
-  height: 0.125rem;
-}
-
-.before\:h-0::before {
-  content: var(--tw-content);
-  height: 0px;
-}
-
-.before\:origin-top-left::before {
-  content: var(--tw-content);
-  transform-origin: top left;
-}
-
-.before\:scale-x-0::before {
-  content: var(--tw-content);
-  --tw-scale-x: 0;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.before\:bg-accentBlue::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: hsl(198 60% 50% / var(--tw-bg-opacity));
-}
-
-.before\:transition-all::before {
-  content: var(--tw-content);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.before\:duration-300::before {
-  content: var(--tw-content);
-  transition-duration: 300ms;
-}
-
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
-.hover\:text-slate-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
-}
-
-.hover\:before\:scale-x-100:hover::before {
-  content: var(--tw-content);
-  --tw-scale-x: 1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .focus\:outline-none:focus {
@@ -735,11 +649,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .dark\:hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:hover\:text-slate-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
 .dark .dark\:focus\:ring-gray-700:focus {

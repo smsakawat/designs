@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .main-nav-link{
-  @apply relative font-medium transition tracking-wide hover:text-slate-700 dark:hover:text-slate-300 before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:bg-accentBlue before:scale-x-0 hover:before:scale-x-100 before:origin-top-left before:z-10 before:transition-all before:duration-300;
+  @apply relative font-medium transition tracking-wide hover:text-slate-600 dark:hover:text-slate-300 before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:bg-accentBlue before:scale-x-0 hover:before:scale-x-100 before:origin-top-left before:z-10 before:transition-all before:duration-300;
 }
