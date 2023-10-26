@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.main-nav-link{
-  @apply relative font-medium transition tracking-wide hover:text-slate-600 dark:hover:text-slate-300 before:absolute before:inset-x-0 before:-bottom-1 before:h-0.5 before:bg-accentBlue before:scale-x-0 hover:before:scale-x-100 before:origin-top-left before:z-10 before:transition-all before:duration-300;
+.main-nav-link {
+  @apply relative font-medium tracking-wide transition before:absolute before:inset-x-0 before:-bottom-1 before:z-10 before:h-0.5 before:origin-top-left before:scale-x-0 before:bg-accentBlue before:transition-all before:duration-300 hover:text-slate-600 hover:before:scale-x-100 dark:hover:text-slate-300;
+}
+
+.btn-primary {
+  @apply relative z-[1] overflow-hidden rounded-full bg-accentCyan px-12 py-2.5 text-lg font-medium before:absolute before:inset-0 before:-z-[1] before:origin-right before:scale-x-0 before:bg-[#158c8c] before:transition before:duration-500 hover:before:origin-left hover:before:scale-x-100;
 }
