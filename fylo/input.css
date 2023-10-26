@@ -7,5 +7,45 @@
 }
 
 .btn-primary {
-  @apply relative z-[1] overflow-hidden rounded-full bg-accentCyan px-12 py-2.5 text-lg font-medium before:absolute before:inset-0 before:-z-[1] before:origin-right before:scale-x-0 before:bg-[#158c8c] before:transition before:duration-500 hover:before:origin-left hover:before:scale-x-100;
+  @apply relative z-[1] overflow-hidden rounded-full bg-accentCyan px-12 py-2.5 text-lg font-medium transition duration-200 before:absolute before:inset-0 before:-z-[1] before:origin-right before:scale-x-0 before:bg-[#36cbc5] before:transition before:duration-500 hover:scale-105 hover:before:origin-left hover:before:scale-x-100;
+}
+
+.testimonial-container::before {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  left: -5rem;
+  width: 5rem;
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-quotes.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.testimonial-container::before {
+  content: "";
+  position: absolute;
+  top: -4.5rem;
+  left: -5rem;
+  width: 5rem;
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-quotes.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.testimonial-container::after {
+  content: "";
+  position: absolute;
+  top: -4rem;
+  right: -5rem;
+  width: 5rem;
+  height: 5rem;
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-quotes.png");
+  background-position: center;
+  background-size: contain;
 }
