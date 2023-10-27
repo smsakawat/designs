@@ -26,24 +26,11 @@
 .testimonial-container::before {
   content: "";
   position: absolute;
+  display: inline-block;
   top: -4.5rem;
-  left: -5rem;
+  left: -0.25rem;
   width: 5rem;
   height: 5rem;
-  background-repeat: no-repeat;
-  background-image: url("../images/bg-quotes.png");
-  background-position: center;
-  background-size: contain;
-}
-
-.testimonial-container::after {
-  content: "";
-  position: absolute;
-  top: -4rem;
-  right: -5rem;
-  width: 5rem;
-  height: 5rem;
-  transform: rotate(180deg);
   background-repeat: no-repeat;
   background-image: url("../images/bg-quotes.png");
   background-position: center;
