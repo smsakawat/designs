@@ -237,15 +237,12 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section
-      id="testimonials"
-      class="pb:96 mx-auto max-w-6xl bg-gray-50 px-6 pt-12 pb-80 dark:bg-darkBlue"
-    >
+    <section id="testimonials" class="bg-gray-50 pt-24 pb-72 dark:bg-darkBlue">
       <div
-        class="testimonial-container relative flex flex-col gap-6 md:flex-row md:gap-8"
+        class="testimonial-container relative mx-auto flex max-w-6xl flex-col gap-6 px-6 md:flex-row md:gap-8"
       >
         <div
-          class="flex flex-1 flex-col items-start justify-between gap-6 rounded-lg bg-darkBlue3 p-12"
+          class="flex flex-1 flex-col items-start justify-between gap-6 rounded-lg bg-gray-100 p-12 dark:bg-darkBlue3"
         >
           <p class="max-w-xs text-lg text-slate-600 dark:text-slate-200">
             Fylo has improved our team productivity by an order of magnitude.
@@ -269,7 +266,7 @@
           </div>
         </div>
         <div
-          class="flex flex-1 flex-col items-start justify-between gap-6 rounded-lg bg-darkBlue3 p-12"
+          class="flex flex-1 flex-col items-start justify-between gap-6 rounded-lg bg-gray-100 p-12 dark:bg-darkBlue3"
         >
           <p class="max-w-xs text-lg text-slate-600 dark:text-slate-200">
             Fylo has transformed the way we work! It's like a breath of fresh
@@ -293,7 +290,7 @@
           </div>
         </div>
         <div
-          class="flex flex-1 flex-col items-start justify-between gap-6 rounded-lg bg-darkBlue3 p-12"
+          class="flex flex-1 flex-col items-start justify-between gap-6 rounded-lg bg-gray-100 p-12 dark:bg-darkBlue3"
         >
           <p class="max-w-xs text-lg text-slate-600 dark:text-slate-200">
             Our experience with Fylo has been nothing short of incredible. The
@@ -319,9 +316,9 @@
     </section>
 
     <!-- CTA Section -->
-    <section id="cta" class="bg-darkBlue2 p-8 md:p-16">
+    <section id="cta" class="p-7 dark:bg-darkBlue2 md:p-16">
       <div
-        class="mx-auto -mt-40 flex max-w-4xl flex-col gap-6 rounded-lg bg-gray-200 p-10 dark:bg-darkBlue1 md:p-16"
+        class="mx-auto -mt-48 flex max-w-4xl flex-col gap-6 rounded-lg bg-gray-200 p-10 dark:bg-darkBlue1 md:p-16"
       >
         <h2 class="text-center text-2xl font-bold leading-tight md:text-3xl">
           Get early access today
@@ -351,18 +348,77 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-rose-500 p-40">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. In nostrum error
-      molestiae explicabo modi doloremque sit culpa quam nisi. Incidunt, debitis
-      quod? Dolore enim aperiam illo sapiente veritatis, cumque placeat sunt
-      reprehenderit molestiae illum? Tenetur asperiores, accusantium esse
-      molestiae quas voluptates libero unde voluptate excepturi magni debitis
-      quaerat? Aut reiciendis ullam quae quas perspiciatis? Similique dolor amet
-      doloribus mollitia maxime asperiores quo saepe, est illum hic fugiat.
-      Laudantium dignissimos quis ab enim excepturi est, repellendus quibusdam
-      explicabo veniam et qui repudiandae. Deleniti voluptas voluptate placeat
-      sunt possimus laboriosam? Magnam, temporibus vel officiis corrupti illum
-      totam recusandae soluta nesciunt perferendis ut!
+    <footer class="bg-darkBlue2 px-5 py-20 text-slate-200">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-start justify-between gap-16 px-6 md:flex-row md:gap-0"
+      >
+        <div class="flex flex-col gap-3">
+          <span class="flex items-center gap-3">
+            <img src="images/icon-phone.svg" alt="phone icon" />
+            <span>+1-543-123-4567</span>
+          </span>
+          <span class="flex items-center gap-3">
+            <img src="images/icon-email.svg" alt="email icon" />
+            <span>fylo@gmail.com</span>
+          </span>
+        </div>
+        <div class="flex flex-col items-start gap-8 md:flex-row md:gap-16">
+          <ul class="flex flex-col items-start gap-3">
+            <li class="border-b border-transparent hover:border-current">
+              <a href="#">About</a>
+            </li>
+            <li class="border-b border-transparent hover:border-current">
+              <a href="#">Job</a>
+            </li>
+            <li class="border-b border-transparent hover:border-current">
+              <a href="#">Press</a>
+            </li>
+            <li class="border-b border-transparent hover:border-current">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+          <ul class="flex flex-col items-start gap-3">
+            <li class="border-b border-transparent hover:border-current">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="border-b border-transparent hover:border-current">
+              <a href="#">Terms</a>
+            </li>
+            <li class="border-b border-transparent hover:border-current">
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="flex items-center gap-3 self-center md:self-start">
+          <li class="cursor-pointer">
+            <a href="#">
+              <img
+                src="images/facebook.svg"
+                alt=""
+                class="social-icon rounded-full bg-darkBlue p-2"
+              />
+            </a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#">
+              <img
+                src="images/instagram.svg"
+                alt=""
+                class="social-icon rounded-full bg-darkBlue p-2"
+              />
+            </a>
+          </li>
+          <li class="cursor-pointer">
+            <a href="#">
+              <img
+                src="images/twitter.svg"
+                alt=""
+                class="social-icon rounded-full bg-darkBlue p-2"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

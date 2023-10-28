@@ -13,8 +13,9 @@
 .testimonial-container::before {
   content: "";
   position: absolute;
-  top: -5rem;
-  left: -5rem;
+  display: inline-block;
+  top: -4.5rem;
+  left: 1.25rem;
   width: 5rem;
   height: 5rem;
   background-repeat: no-repeat;
@@ -23,16 +24,7 @@
   background-size: contain;
 }
 
-.testimonial-container::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  top: -4.5rem;
-  left: -0.25rem;
-  width: 5rem;
-  height: 5rem;
-  background-repeat: no-repeat;
-  background-image: url("../images/bg-quotes.png");
-  background-position: center;
-  background-size: contain;
+.social-icon:hover {
+  filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
+    brightness(105%) contrast(104%);
 }
