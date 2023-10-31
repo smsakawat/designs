@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-nav-link {
+  @apply text-lg font-medium before:bg-slate-100 before:absolute before:inset-x-0 before:h-0.5 before:-bottom-0.5 before:scale-x-0 before:origin-left before:transition before:duration-300 before:ease-in-out group-hover:before:scale-x-100;
+}
+
+/* Hamburger Menu */
+.btn-menu {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 0.25s;
+  position: relative;
+  z-index: 999;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+  transform-origin: bottom;
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open-close {
+  transform: rotate(90deg);
+}
+
+.open-close .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open-close .hamburger-middle {
+  transform: scaleY(0);
+}
+
+.open-close .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.5s ease-out;
+}
+
+.active.mobile-nav {
+  transform: scaleY(1);
+  transform-origin: top;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
