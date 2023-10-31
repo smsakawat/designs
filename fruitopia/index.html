@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Fuitopia</title>
   </head>
-  <body class="leading-normal  text-slate-100">
+
+  <body class="leading-normal text-gray-800">
     <!-- Header Section -->
     <header
-      class="relative max-w-6xl my-8 mx-6 rounded-xl bg-primary-500 px-6 py-4 md:px-12 md:py-5 lg:rounded-full lg:mx-auto flex items-center justify-between gap-32 z-50"
+      class="relative max-w-6xl my-8 mx-6 rounded-xl bg-primary-500 px-6 py-4 md:px-12 md:py-5 text-slate-100 lg:rounded-full lg:mx-auto flex items-center justify-between gap-32 z-50"
     >
       <!-- Links -->
       <nav class="hidden lg:block">
@@ -41,7 +42,7 @@
 
       <!-- Search Bar -->
       <div
-        class="hidden flex-1 bg-slate-200 px-8 py-2 overflow-hidden lg:flex items-center justify-between rounded-full gap-8 focus-within:ring-1 focus-within:ring-blue-400 focus-within:bg-slate-300 transition"
+        class="hidden flex-1 bg-slate-100 px-8 py-2 overflow-hidden lg:flex items-center justify-between rounded-full gap-8 focus-within:ring-1 focus-within:ring-blue-400 focus-within:bg-slate-300 transition"
       >
         <input
           type="text"
@@ -71,7 +72,7 @@
       >
         <!-- Search Bar -->
         <div
-          class="flex-1 bg-slate-200 px-8 py-2 overflow-hidden flex items-center justify-between rounded-full gap-8 focus-within:ring-1 focus-within:ring-blue-400 focus-within:bg-slate-300 transition"
+          class="flex-1 bg-slate-100 px-8 py-2 overflow-hidden flex items-center justify-between rounded-full gap-8 focus-within:ring-1 focus-within:ring-blue-400 focus-within:bg-slate-300 transition"
         >
           <input
             type="text"
@@ -123,58 +124,213 @@
     <!-- Main Section -->
     <main>
       <!-- Hero Section -->
-      <div class="max-w-6xl mx-auto px-6">
+      <section class="max-w-6xl mx-auto px-6 relative mb-16 md:mb-60">
         <div class="carousel w-full ">
-          <div id="slide1" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-xl before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
+          <div id="slide1" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-lg before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
             <img src="images/banner1.png" class="w-full relative" />
-            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-6 ga- text-white">
-              <h1 class="md:max-w-md text-3xl font-bold md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
-              <p class="text-sm md:text-lg text-center">We supply highly quality organic products</p>
-              <button class="mt-1 p-3 md:px-8 md:py-4 bg-primary-500 font-medium font-inter rounded-md hover:bg-primary-600 transition">Shop Now</button>
+            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-3 text-white">
+              <h1 class="md:max-w-md text-3xl font-black md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
+              <p class="text-sm md:text-lg text-center mb-2">We supply highly quality organic products</p>
+              <button class=" primary-btn">Shop Now</button>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-40">
               <a href="#slide4" class="btn btn-circle">❮</a>
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide2" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-xl before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
+          <div id="slide2" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-lg before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
             <img src="./images/banner2.png" class="w-full" />
-            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-6 ga- text-white">
-              <h1 class="md:max-w-md text-3xl font-bold md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
-              <p class="text-sm md:text-lg text-center">We supply highly quality organic products</p>
-              <button class="mt-1 p-3 md:px-8 md:py-4 bg-primary-500 font-medium font-inter rounded-md hover:bg-primary-600 transition">Shop Now</button>
+            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-3 text-white">
+              <h1 class="md:max-w-md text-3xl font-black md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
+              <p class="text-sm md:text-lg text-center mb-2">We supply highly quality organic products</p>
+              <button class=" primary-btn">Shop Now</button>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-40">
               <a href="#slide1" class="btn btn-circle">❮</a>
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide3" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-xl before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
+          <div id="slide3" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-lg before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
             <img src="./images/banner3.png" class="w-full" />
-            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-6 ga- text-white">
-              <h1 class="md:max-w-md text-3xl font-bold md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
-              <p class="text-sm md:text-lg text-center">We supply highly quality organic products</p>
-              <button class="mt-1 p-3 md:px-8 md:py-4 bg-primary-500 font-medium font-inter rounded-md hover:bg-primary-600 transition">Shop Now</button>
+            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-3 text-white">
+              <h1 class="md:max-w-md text-3xl font-black md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
+              <p class="text-sm md:text-lg text-center mb-2">We supply highly quality organic products</p>
+              <button class=" primary-btn">Shop Now</button>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-40">
               <a href="#slide2" class="btn btn-circle">❮</a>
               <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide4" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-xl before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
+          <div id="slide4" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-lg before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
             <img src="./images/banner4.png" class="w-full" />
-            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-6 ga- text-white">
-              <h1 class="md:max-w-md text-3xl font-bold md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
-              <p class="text-sm md:text-lg text-center">We supply highly quality organic products</p>
-              <button class="mt-1 p-3 md:px-8 md:py-4 bg-primary-500 font-medium font-inter rounded-md hover:bg-primary-600 transition">Shop Now</button>
+            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-3 text-white">
+              <h1 class="md:max-w-md text-3xl font-black md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
+              <p class="text-sm md:text-lg text-center mb-2">We supply highly quality organic products</p>
+              <button class=" primary-btn">Shop Now</button>
             </div>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-40">
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
+
+          </div>
+          <ul style="z-index:9999;"class="hidden bg-white shadow-[0px_4px_12px_-4px] shadow-black/10 md:flex absolute inset-x-[10%] bottom-0  items-center justify-between translate-y-[60%] px-16 py-4 rounded shadow-xl">
+            <li class="flex flex-col gap-1 items-center">
+              <img src="images/fruit1.png" alt="Grapes" class="w-20 lg:w-32">
+              <p class="text-center text-slate-800 text-lg font-medium font-inter">Grapes</p>
+            </li>
+            <li class="flex flex-col gap-1 items-center">
+              <img src="images/fruit2.png" alt="Orange" class="w-20 lg:w-32">
+              <p class="text-center text-slate-800 text-lg font-medium font-inter">Orange</p>
+            </li>
+            <li class="flex flex-col gap-1 items-center">
+              <img src="images/fruit3.png" alt="Mango" class="w-20 lg:w-32">
+              <p class="text-center text-slate-800 text-lg font-medium font-inter">Mango</p>
+            </li>
+            <li class="flex flex-col gap-1 items-center">
+              <img src="images/fruit4.png" alt="Strawberry" class="w-20 lg:w-32">
+              <p class="text-center text-slate-800 text-lg font-medium font-inter">Strawberry</p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Deal Section -->
+       <section class="max-w-6xl mx-auto px-6 mb-20 md:mb-32">
+        <header class="flex flex-col gap-6 md:flex-row items-center justify-between mb-12">
+         <div>
+          <h2 class="text-3xl md:text-5xl mb-2 text-center md:text-left font-black">Deal of the day</h2>
+          <p class=" text-slate-500 text-center md:text-left max-w-xs md:max-w-lg">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
+         </div>
+         <div>
+          <time class=" flex gap-4">
+            <div>
+              <div class="flex items-center gap-4 mb-3">
+                <p class="text-3xl md:text-4xl lg:text-5xl font-black">15</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4"  viewBox="0 0 3 10" >
+                  <path class="stroke-gray-500" d="M1.60902 2.30006C1.48971 2.30006 1.37529 2.25267 1.29093 2.16831C1.20657 2.08395 1.15918 1.96953 1.15918 1.85023C1.15918 1.73092 1.20657 1.6165 1.29093 1.53214C1.37529 1.44778 1.48971 1.40039 1.60902 1.40039C1.72832 1.40039 1.84274 1.44778 1.9271 1.53214C2.01146 1.6165 2.05885 1.73092 2.05885 1.85023C2.05885 1.96953 2.01146 2.08395 1.9271 2.16831C1.84274 2.25267 1.72832 2.30006 1.60902 2.30006ZM1.60902 5.89875C1.48971 5.89875 1.37529 5.85135 1.29093 5.76699C1.20657 5.68263 1.15918 5.56821 1.15918 5.44891C1.15918 5.32961 1.20657 5.21519 1.29093 5.13083C1.37529 5.04647 1.48971 4.99908 1.60902 4.99908C1.72832 4.99908 1.84274 5.04647 1.9271 5.13083C2.01146 5.21519 2.05885 5.32961 2.05885 5.44891C2.05885 5.56821 2.01146 5.68263 1.9271 5.76699C1.84274 5.85135 1.72832 5.89875 1.60902 5.89875ZM1.60902 9.49743C1.48971 9.49743 1.37529 9.45004 1.29093 9.36568C1.20657 9.28132 1.15918 9.1669 1.15918 9.0476C1.15918 8.92829 1.20657 8.81387 1.29093 8.72951C1.37529 8.64515 1.48971 8.59776 1.60902 8.59776C1.72832 8.59776 1.84274 8.64515 1.9271 8.72951C2.01146 8.81387 2.05885 8.92829 2.05885 9.0476C2.05885 9.1669 2.01146 9.28132 1.9271 9.36568C1.84274 9.45004 1.72832 9.49743 1.60902 9.49743Z"  stroke-width="0.899671" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+              <p class="text-sm text-gray-500 font-medium font-inter">Days</p>
+            </div>
+            <div >
+              <div class="flex items-center gap-4 mb-3">
+                <p class="text-3xl md:text-4xl lg:text-5xl font-black">12</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4"  viewBox="0 0 3 10" >
+                  <path class="stroke-gray-500" d="M1.60902 2.30006C1.48971 2.30006 1.37529 2.25267 1.29093 2.16831C1.20657 2.08395 1.15918 1.96953 1.15918 1.85023C1.15918 1.73092 1.20657 1.6165 1.29093 1.53214C1.37529 1.44778 1.48971 1.40039 1.60902 1.40039C1.72832 1.40039 1.84274 1.44778 1.9271 1.53214C2.01146 1.6165 2.05885 1.73092 2.05885 1.85023C2.05885 1.96953 2.01146 2.08395 1.9271 2.16831C1.84274 2.25267 1.72832 2.30006 1.60902 2.30006ZM1.60902 5.89875C1.48971 5.89875 1.37529 5.85135 1.29093 5.76699C1.20657 5.68263 1.15918 5.56821 1.15918 5.44891C1.15918 5.32961 1.20657 5.21519 1.29093 5.13083C1.37529 5.04647 1.48971 4.99908 1.60902 4.99908C1.72832 4.99908 1.84274 5.04647 1.9271 5.13083C2.01146 5.21519 2.05885 5.32961 2.05885 5.44891C2.05885 5.56821 2.01146 5.68263 1.9271 5.76699C1.84274 5.85135 1.72832 5.89875 1.60902 5.89875ZM1.60902 9.49743C1.48971 9.49743 1.37529 9.45004 1.29093 9.36568C1.20657 9.28132 1.15918 9.1669 1.15918 9.0476C1.15918 8.92829 1.20657 8.81387 1.29093 8.72951C1.37529 8.64515 1.48971 8.59776 1.60902 8.59776C1.72832 8.59776 1.84274 8.64515 1.9271 8.72951C2.01146 8.81387 2.05885 8.92829 2.05885 9.0476C2.05885 9.1669 2.01146 9.28132 1.9271 9.36568C1.84274 9.45004 1.72832 9.49743 1.60902 9.49743Z"  stroke-width="0.899671" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+              <p class="text-sm text-gray-500 font-medium font-inter">Hours </p>
+            </div>
+            <div>
+              <div class="flex items-center gap-4 mb-3">
+                <p class="text-3xl md:text-4xl lg:text-5xl font-black">47</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4"  viewBox="0 0 3 10" >
+                  <path class="stroke-gray-500" d="M1.60902 2.30006C1.48971 2.30006 1.37529 2.25267 1.29093 2.16831C1.20657 2.08395 1.15918 1.96953 1.15918 1.85023C1.15918 1.73092 1.20657 1.6165 1.29093 1.53214C1.37529 1.44778 1.48971 1.40039 1.60902 1.40039C1.72832 1.40039 1.84274 1.44778 1.9271 1.53214C2.01146 1.6165 2.05885 1.73092 2.05885 1.85023C2.05885 1.96953 2.01146 2.08395 1.9271 2.16831C1.84274 2.25267 1.72832 2.30006 1.60902 2.30006ZM1.60902 5.89875C1.48971 5.89875 1.37529 5.85135 1.29093 5.76699C1.20657 5.68263 1.15918 5.56821 1.15918 5.44891C1.15918 5.32961 1.20657 5.21519 1.29093 5.13083C1.37529 5.04647 1.48971 4.99908 1.60902 4.99908C1.72832 4.99908 1.84274 5.04647 1.9271 5.13083C2.01146 5.21519 2.05885 5.32961 2.05885 5.44891C2.05885 5.56821 2.01146 5.68263 1.9271 5.76699C1.84274 5.85135 1.72832 5.89875 1.60902 5.89875ZM1.60902 9.49743C1.48971 9.49743 1.37529 9.45004 1.29093 9.36568C1.20657 9.28132 1.15918 9.1669 1.15918 9.0476C1.15918 8.92829 1.20657 8.81387 1.29093 8.72951C1.37529 8.64515 1.48971 8.59776 1.60902 8.59776C1.72832 8.59776 1.84274 8.64515 1.9271 8.72951C2.01146 8.81387 2.05885 8.92829 2.05885 9.0476C2.05885 9.1669 2.01146 9.28132 1.9271 9.36568C1.84274 9.45004 1.72832 9.49743 1.60902 9.49743Z"  stroke-width="0.899671" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+              <p class="text-sm text-gray-500 font-medium font-inter">Minutes</p>
+            </div>
+            <div>
+              <div class="mb-3">
+                <p class="text-3xl md:text-4xl lg:text-5xl font-black">09</p>
+              </div>
+              <p class="text-sm text-gray-500 font-medium font-inter">Seconds</p>
+            </div>
+          </time>
+        </div>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div class="group border flex-auto p-6 md:p-8 flex flex-col items-center gap-6 rounded-lg hover:border-primary-400 hover:bg-primary-50">
+            <div class="flex flex-col items-center gap-8">
+              <img src="images/fruit6.png" alt="Apple" >
+              <p class="text-center font-black text-xl">12.90$ - 18.85$</p>
+            </div>
+            <div class="w-full border-t border-gray-200 group-hover:border-primary-200"></div>
+            <div class="flex flex-col items-center gap-3">
+              <p class="text-slate-500 font-medium font-inter">Apples</p>
+              <div class="rating rating-lg rating-half">
+                <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-2" />
+          </div>
+            <a href="#" class=" mt-2 text-primary-500 font-medium font-inter text-lg underline decoration-transparent underline-offset-2 hover:decoration-primary-400 transition">Details</a>
+            </div>
+          </div>
+          <div class="group border flex-auto p-6 md:p-8 flex flex-col items-center gap-6 rounded-lg hover:border-primary-400 hover:bg-primary-50">
+            <div class="flex flex-col items-center gap-8">
+              <img src="images/fruit7.png" alt="Orange" >
+              <p class="text-center font-black text-xl">15.30$ - 20.45$</p>
+            </div>
+            <div class="w-full border-t border-gray-200 group-hover:border-primary-200"></div>
+            <div class="flex flex-col items-center gap-3">
+              <p class="text-slate-500 font-medium font-inter">Orange</p>
+              <div class="rating rating-lg">
+                <input type="radio" name="rating-9" class="bg-primary-500 rating-hidden" />
+                <input type="radio" name="rating-9" class="bg-primary-500 mask mask-star-2" />
+                <input type="radio" name="rating-9" class="bg-primary-500 mask mask-star-2" checked />
+                <input type="radio" name="rating-9" class="bg-primary-500 mask mask-star-2" />
+                <input type="radio" name="rating-9" class="bg-primary-500 mask mask-star-2" />
+                <input type="radio" name="rating-9" class="bg-primary-500 mask mask-star-2" />
+              </div>
+            <a href="#" class=" mt-2 text-primary-500 font-medium font-inter text-lg underline decoration-transparent underline-offset-2 hover:decoration-primary-400 transition">Details</a>
+            </div>
+          </div>
+          <div class="group border flex-auto p-6 md:p-8 flex flex-col items-center gap-6 rounded-lg hover:border-primary-400 hover:bg-primary-50">
+            <div class="flex flex-col items-center gap-8">
+              <img src="images/fruit8.png" alt="Red Dragon" >
+              <p class="text-center font-black text-xl">11.80$ - 16.45$</p>
+            </div>
+            <div class="w-full border-t border-gray-200 group-hover:border-primary-200"></div>
+            <div class="flex flex-col items-center gap-3">
+              <p class="text-slate-500 font-medium font-inter">Red Dragon</p>
+              <div class="rating rating-lg">
+                <input type="radio" name="rating-9" class="bg-primary-500 rating-hidden" />
+                <input type="radio" name="rating-9" class="bg-primary-500 mask mask-star-2" />
+                <input type="radio" name="rating-9" class="bg-primary-500 mask mask-star-2" checked />
+                <input type="radio" name="rating-9" class="bg-primary-500 mask mask-star-2" />
+                <input type="radio" name="rating-9" class="bg-primary-500 mask mask-star-2" />
+                <input type="radio" name="rating-9" class="bg-primary-500 mask mask-star-2" />
+              </div>
+            <a href="#" class=" mt-2 text-primary-500 font-medium font-inter text-lg underline decoration-transparent underline-offset-2 hover:decoration-primary-400 transition">Details</a>
+            </div>
+          </div>
+          <div class="group border flex-auto p-6 md:p-8 flex flex-col items-center gap-6 rounded-lg hover:border-primary-400 hover:bg-primary-50">
+            <div class="flex flex-col items-center gap-8">
+              <img src="images/fruit9.png" alt="Banana" >
+              <p class="text-center font-black text-xl">12.45$ - 14.60$</p>
+            </div>
+            <div class="w-full border-t border-gray-200 group-hover:border-primary-200"></div>
+            <div class="flex flex-col items-center gap-3">
+              <p class="text-slate-500 font-medium font-inter">Banana</p>
+              <div class="rating rating-lg rating-half">
+                    <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-primary-500 mask mask-star-2 mask-half-2" />
+              </div>
+              <a href="#" class=" mt-2 text-primary-500 font-medium font-inter text-lg underline decoration-transparent underline-offset-2 hover:decoration-primary-400 transition">Details</a>
+            </div>
           </div>
         </div>
+        <div class="flex justify-center">
+          <button class="primary-btn">Shop All</button>
+        </div>
+       </section>
       </div>
     </main>
 

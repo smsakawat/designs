@@ -6,6 +6,10 @@
   @apply text-lg font-medium before:bg-accent before:absolute before:inset-x-0 before:h-0.5 before:-bottom-0.5 before:scale-x-0 before:origin-left before:transition before:duration-300 before:ease-in-out group-hover:before:scale-x-100;
 }
 
+.primary-btn {
+  @apply px-3 py-2 md:px-8 md:py-4 text-slate-100 bg-primary-500 text-sm md:text-base font-medium font-inter rounded-md hover:bg-primary-600 transition;
+}
+
 /* Hamburger Menu */
 .btn-menu {
   cursor: pointer;
