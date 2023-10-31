@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-white">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Fuitopia</title>
   </head>
-  <body class="leading-normal text-slate-100">
+  <body class="leading-normal  text-slate-100">
     <!-- Header Section -->
     <header
       class="relative max-w-6xl my-8 mx-6 rounded-xl bg-primary-500 px-6 py-4 md:px-12 md:py-5 lg:rounded-full lg:mx-auto flex items-center justify-between gap-32 z-50"
@@ -41,13 +41,13 @@
 
       <!-- Search Bar -->
       <div
-        class="flex-1 bg-slate-200 px-8 py-2 overflow-hidden flex items-center justify-between rounded-full gap-8 focus-within:ring-1 focus-within:ring-blue-400 focus-within:bg-slate-300 transition"
+        class="hidden flex-1 bg-slate-200 px-8 py-2 overflow-hidden lg:flex items-center justify-between rounded-full gap-8 focus-within:ring-1 focus-within:ring-blue-400 focus-within:bg-slate-300 transition"
       >
         <input
           type="text"
           name="search"
           id="search"
-          placeholder="Search"
+          placeholder="Search here"
           class="w-24 xl:flex-auto appearance-none focus:outline-none bg-transparent caret-slate-600 text-slate-700 placeholder:text-slate-500"
         />
         <svg
@@ -67,7 +67,7 @@
 
       <!-- Mobile Navigation -->
       <div
-        class="mobile-nav lg:hidden absolute rounded-b-xl pt-10 pb-16 top-[85%] inset-x-0 bg-primary-500 flex flex-col items-center gap-6"
+        class="mobile-nav z-50 lg:hidden absolute rounded-b-xl pt-10 pb-16 top-[85%] inset-x-0 bg-primary-500 flex flex-col items-center gap-6"
       >
         <!-- Search Bar -->
         <div
@@ -77,7 +77,7 @@
             type="text"
             name="search"
             id="search"
-            placeholder="Search"
+            placeholder="Search here"
             class="flex-1 appearance-none focus:outline-none bg-transparent caret-slate-600 text-slate-700 placeholder:text-slate-500"
           />
           <svg
@@ -120,8 +120,63 @@
         <div class="hamburger-bottom"></div>
       </button>
     </header>
-
-    <main></main>
+    <!-- Main Section -->
+    <main>
+      <!-- Hero Section -->
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="carousel w-full ">
+          <div id="slide1" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-xl before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
+            <img src="images/banner1.png" class="w-full relative" />
+            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-6 ga- text-white">
+              <h1 class="md:max-w-md text-3xl font-bold md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
+              <p class="text-sm md:text-lg text-center">We supply highly quality organic products</p>
+              <button class="mt-1 p-3 md:px-8 md:py-4 bg-primary-500 font-medium font-inter rounded-md hover:bg-primary-600 transition">Shop Now</button>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-40">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-xl before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
+            <img src="./images/banner2.png" class="w-full" />
+            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-6 ga- text-white">
+              <h1 class="md:max-w-md text-3xl font-bold md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
+              <p class="text-sm md:text-lg text-center">We supply highly quality organic products</p>
+              <button class="mt-1 p-3 md:px-8 md:py-4 bg-primary-500 font-medium font-inter rounded-md hover:bg-primary-600 transition">Shop Now</button>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-40">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-xl before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
+            <img src="./images/banner3.png" class="w-full" />
+            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-6 ga- text-white">
+              <h1 class="md:max-w-md text-3xl font-bold md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
+              <p class="text-sm md:text-lg text-center">We supply highly quality organic products</p>
+              <button class="mt-1 p-3 md:px-8 md:py-4 bg-primary-500 font-medium font-inter rounded-md hover:bg-primary-600 transition">Shop Now</button>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-40">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item overflow-hidden relative w-full before:absolute before:rounded-xl before:inset-0 before:bg-gradient-to-r before:from-black/50 before:to-black/50 before:z-10">
+            <img src="./images/banner4.png" class="w-full" />
+            <div class="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col items-center gap-1 md:gap-2 lg:gap-6 ga- text-white">
+              <h1 class="md:max-w-md text-3xl font-bold md:text-4xl lg:text-6xl text-center">Exotic tastes at your doorstep</h1>
+              <p class="text-sm md:text-lg text-center">We supply highly quality organic products</p>
+              <button class="mt-1 p-3 md:px-8 md:py-4 bg-primary-500 font-medium font-inter rounded-md hover:bg-primary-600 transition">Shop Now</button>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-40">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer></footer>
 

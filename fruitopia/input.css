@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .main-nav-link {
-  @apply text-lg font-medium before:bg-slate-100 before:absolute before:inset-x-0 before:h-0.5 before:-bottom-0.5 before:scale-x-0 before:origin-left before:transition before:duration-300 before:ease-in-out group-hover:before:scale-x-100;
+  @apply text-lg font-medium before:bg-accent before:absolute before:inset-x-0 before:h-0.5 before:-bottom-0.5 before:scale-x-0 before:origin-left before:transition before:duration-300 before:ease-in-out group-hover:before:scale-x-100;
 }
 
 /* Hamburger Menu */

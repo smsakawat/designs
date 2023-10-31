@@ -16,6 +16,7 @@ module.exports = {
           900: "#84181b",
           950: "#480709",
         },
+        accent: "#FCFFE7",
       },
       fontFamily: {
         sans: ["Lato", "sans-serif"],
@@ -23,5 +24,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
