@@ -22,6 +22,9 @@ module.exports = {
         sans: ["Lato", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      backgroundImage: () => ({
+        "team-banner": "url(../images/team.png)",
+      }),
     },
   },
   plugins: [require("daisyui")],
