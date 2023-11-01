@@ -16,7 +16,7 @@ module.exports = {
           900: "#84181b",
           950: "#480709",
         },
-        accent: "#FCFFE7",
+        accent: "#f0f0f0",
       },
       fontFamily: {
         sans: ["Lato", "sans-serif"],
