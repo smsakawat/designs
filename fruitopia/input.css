@@ -23,10 +23,9 @@
 
     background-image: linear-gradient(
         to right,
-        rgba(220, 55, 55, 0.3),
-        rgba(220, 70, 70, 0.3)
+        rgba(18, 18, 18, 0.7),
+        rgba(18, 18, 18, 0.7)
       ),
-      linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("../images/team.png");
 
     background-repeat: no-repeat;
