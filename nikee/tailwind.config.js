@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./*.html", "./*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      "2xl": "1440px",
+    },
     extend: {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
@@ -19,11 +22,8 @@ module.exports = {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
       },
       backgroundImage: {
-        hero: "url('assets/images/collection-background.svg')",
-        card: "url('assets/images/thumbnail-background.svg')",
-      },
-      screens: {
-        wide: "1440px",
+        hero: "url('../assets/images/collection-background.svg')",
+        card: "url('../assets/images/thumbnail-background.svg')",
       },
     },
   },
