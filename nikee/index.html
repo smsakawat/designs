@@ -14,11 +14,11 @@
       class="padding-x max-container absolute inset-x-0 top-0 z-10 w-full py-8"
     >
       <!-- Navbar -->
-      <nav class="hidden items-center justify-between md:flex">
+      <nav class="md:flex hidden items-center justify-between">
         <a href="/">
           <img src="assets/images/header-logo.svg" alt="Logo" />
         </a>
-        <ul class="hidden items-center justify-center gap-16 lg:flex">
+        <ul class="lg:flex hidden items-center justify-center gap-16">
           <li
             class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-primary before:transition before:duration-200 hover:before:scale-x-100"
           >
@@ -51,27 +51,28 @@
         <img
           src="assets/icons/hamburger.svg"
           alt="hamburger icon"
-          class="h-6 w-6 cursor-pointer lg:hidden"
+          class="lg:hidden h-6 w-6 cursor-pointer"
         />
       </nav>
     </header>
 
     <!-- Main Starts -->
     <main>
+      <!-- Hero Section -->
       <section class="padding-b">
         <div
-          class="max-container flex min-h-screen flex-col items-start justify-center gap-12 xl:flex-row"
+          class="max-container xl:flex-row flex min-h-screen flex-col items-start justify-center gap-12"
         >
           <div
-            class="padding-l flex flex-col items-start justify-center pt-28 xl:w-2/5"
+            class="padding-l xl:w-2/5 flex flex-col items-start justify-center pt-28"
           >
             <p class="mb-8 text-xl capitalize text-primary">
               Our summer collections
             </p>
             <h1
-              class="text-7xl mb-9 font-palanquin font-bold leading-[1.15] lg:text-8xl lg:leading-[1.25] xl:whitespace-nowrap"
+              class="lg:text-8xl lg:leading-[1.25] xl:whitespace-nowrap mb-9 font-palanquin text-7xl font-bold leading-[1.15]"
             >
-              <span class="relative z-50 rounded xl:bg-white xl:pr-12"
+              <span class="xl:bg-white xl:pr-12 relative z-50 rounded"
                 >The New Arrival</span
               >
               <br />
@@ -84,23 +85,23 @@
             </p>
             <a
               href="#"
-              class="hover:bg-primary-shade text-gray-two mb-16 flex items-center gap-3 rounded-full bg-primary px-8 py-3 text-lg font-medium transition hover:scale-105"
+              class="mb-16 flex items-center gap-3 rounded-full bg-primary px-8 py-3 text-lg font-medium text-gray-two transition hover:scale-105 hover:bg-primary-shade"
             >
               <span>Shop now</span>
               <img src="assets/icons/arrow-right.svg" alt="arrow right" />
             </a>
             <div class="flex items-start justify-start gap-10">
-              <div class="space-y-2.5 lg:space-y-3">
+              <div class="lg:space-y-3 space-y-2.5">
                 <p class="lg:text-5xl font-palanquin text-4xl font-bold">1k+</p>
                 <p class="text-lg text-slate-gray">Brands</p>
               </div>
-              <div class="space-y-2.5 lg:space-y-3">
+              <div class="lg:space-y-3 space-y-2.5">
                 <p class="lg:text-5xl font-palanquin text-4xl font-bold">
                   500+
                 </p>
                 <p class="text-lg text-slate-gray">Shops</p>
               </div>
-              <div class="space-y-2.5 lg:space-y-3">
+              <div class="lg:space-y-3 space-y-2.5">
                 <p class="lg:text-5xl font-palanquin text-4xl font-bold">
                   250k+
                 </p>
@@ -109,13 +110,55 @@
             </div>
           </div>
           <div
-            class="flex w-full items-center justify-center bg-hero bg-cover bg-center py-40 xl:min-h-screen xl:py-40"
+            class="xl:min-h-screen xl:py-40 relative flex w-full flex-1 items-center justify-center bg-hero bg-cover bg-center py-40"
           >
-            <img src="assets/images/big-shoe1.png" alt="Shoe collection one" />
+            <img
+              src="assets/images/big-shoe1.png"
+              alt="Shoe collection one"
+              id="hero-img"
+            />
+
+            <!-- Add Shoe Changer here -->
+            <div
+              class="sm:gap-8 sm:left-[10%] sm:inset-x-0 absolute inset-x-6 -bottom-[5%] flex items-center gap-4"
+            >
+              <div
+                class="group flex cursor-pointer items-center justify-center rounded-lg bg-card bg-cover bg-center px-4 py-6"
+                id="shoe-one"
+              >
+                <img
+                  src="assets/images/big-shoe1.png"
+                  alt="shoe collection three"
+                  class="h-24 w-32 transition group-hover:brightness-75"
+                />
+              </div>
+              <div
+                class="group flex cursor-pointer items-center justify-center rounded-lg bg-card bg-cover bg-center px-4 py-6"
+                id="shoe-two"
+              >
+                <img
+                  src="assets/images/big-shoe2.png"
+                  alt="shoe collection two"
+                  class="h-24 w-32 group-hover:brightness-75"
+                />
+              </div>
+              <div
+                class="group flex cursor-pointer items-center justify-center rounded-lg bg-card bg-cover bg-center px-4 py-6"
+                id="shoe-three"
+              >
+                <img
+                  src="assets/images/big-shoe3.png"
+                  alt="shoe collection three"
+                  class="h-24 w-32 group-hover:brightness-75"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
 
