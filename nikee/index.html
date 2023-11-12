@@ -10,39 +10,45 @@
   </head>
   <body class="relative text-slate-800">
     <!-- Header Starts -->
-    <header
-      class="padding-x max-container absolute inset-x-0 top-0 z-10 w-full py-8"
-    >
+    <header class="max-container absolute inset-x-0 top-0 z-10 w-full py-8">
       <!-- Navbar -->
-      <nav class="md:flex hidden items-center justify-between">
+      <nav
+        class="padding-r padding-l 3xl:pl-0 flex items-center justify-between"
+      >
         <a href="/">
-          <img src="assets/images/header-logo.svg" alt="Logo" />
+          <img
+            src="assets/images/header-logo.svg"
+            alt="Logo"
+            class="sm:w-auto h-auto w-24"
+          />
         </a>
         <ul class="lg:flex hidden items-center justify-center gap-16">
           <li
-            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-primary before:transition before:duration-200 hover:before:scale-x-100"
+            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[102%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-primary before:transition before:duration-200 hover:before:scale-x-100"
           >
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li
-            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-primary before:transition before:duration-200 hover:before:scale-x-100"
+            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[102%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-primary before:transition before:duration-200 hover:before:scale-x-100"
           >
-            <a href="#">About Us</a>
+            <a href="#about">About Us</a>
           </li>
           <li
-            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-primary before:transition before:duration-200 hover:before:scale-x-100"
+            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[102%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-primary before:transition before:duration-200 hover:before:scale-x-100"
           >
-            <a href="#">Products</a>
+            <a href="#products">Products</a>
           </li>
           <li
-            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-primary before:transition before:duration-200 hover:before:scale-x-100"
+            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[102%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-primary before:transition before:duration-200 hover:before:scale-x-100"
           >
-            <a href="#">Contact Us</a>
+            <a href="#contact">Contact Us</a>
           </li>
         </ul>
 
         <!-- Login/Signup -->
-        <div class="flex items-center gap-2 text-lg font-medium text-slate-800">
+        <div
+          class="sm:text-lg flex items-center gap-2 font-medium text-slate-800"
+        >
           <a href="#" class="transition hover:text-slate-600">Sign in</a>
           <span>/</span>
           <a href="#" class="transition hover:text-slate-600">Explore now</a>
@@ -59,14 +65,16 @@
     <!-- Main Starts -->
     <main>
       <!-- Hero Section -->
-      <section class="padding-b">
+      <section class="padding-b" id="home">
         <div
           class="max-container xl:flex-row flex min-h-screen flex-col items-start justify-center gap-12"
         >
           <div
-            class="padding-l xl:w-2/5 flex flex-col items-start justify-center pt-28"
+            class="padding-l xl:w-2/5 3xl:pl-0 flex flex-col items-start justify-center pt-32"
           >
-            <p class="mb-8 text-xl capitalize text-primary">
+            <p
+              class="mb-6 font-palanquin text-sm uppercase tracking-wider text-primary"
+            >
               Our summer collections
             </p>
             <h1
@@ -120,10 +128,10 @@
 
             <!-- Add Shoe Changer here -->
             <div
-              class="sm:gap-8 sm:left-[10%] sm:inset-x-0 absolute inset-x-6 -bottom-[5%] flex items-center gap-4"
+              class="sm:inset-x-0 sm:left-[10%] sm:gap-8 absolute inset-x-6 -bottom-[5%] flex items-center gap-4"
             >
               <div
-                class="group flex cursor-pointer items-center justify-center rounded-lg bg-card bg-cover bg-center px-4 py-6"
+                class="active group flex cursor-pointer items-center justify-center rounded-lg bg-card bg-cover bg-center px-4 py-6"
                 id="shoe-one"
               >
                 <img
@@ -156,6 +164,145 @@
           </div>
         </div>
       </section>
+
+      <!-- Popular Products -->
+      <section class="padding 3xl:px-0" id="products">
+        <div class="max-container">
+          <div class="lg:items-start mb-12 flex flex-col items-center gap-8">
+            <h2
+              class="sm:text-5xl lg:text-left text-center font-palanquin text-4xl font-bold leading-tight"
+            >
+              Our <span class="text-primary">Popular </span>Products
+            </h2>
+            <p class="info-text lg:max-w-xl lg:text-left max-w-md text-center">
+              Experience top-notch quality and style with our sought-after
+              selections. Discover a world of comfort, design, and value
+            </p>
+          </div>
+          <div
+            class="sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-8 lg:gap-6 grid grid-cols-1 justify-center gap-12"
+          >
+            <a href="#" class="group flex justify-center">
+              <div>
+                <figure class="mb-6">
+                  <img
+                    src="assets/images/shoe4.svg"
+                    alt="shoe4"
+                    class="transition-all group-hover:brightness-90"
+                  />
+                </figure>
+                <div class="flex flex-col items-start gap-2">
+                  <div class="flex items-center gap-2.5">
+                    <img
+                      src="assets/icons/star.svg"
+                      alt="rating icon"
+                      class="h-6 w-6 object-contain object-center"
+                    />
+                    <span class="leading-0 text-slate-500">(4.6)</span>
+                  </div>
+                  <h3
+                    class="border-b-2 border-transparent font-palanquin text-2xl font-bold leading-[1.05] transition group-hover:border-current"
+                  >
+                    Nike Air Jordan
+                  </h3>
+                  <p class="text-2xl font-semibold text-primary-tint">
+                    $215.50
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="group flex justify-center">
+              <div>
+                <figure class="mb-6">
+                  <img
+                    src="assets/images/shoe5.svg"
+                    alt="shoe4"
+                    class="transition-all group-hover:brightness-90"
+                  />
+                </figure>
+                <div class="flex flex-col items-start gap-2">
+                  <div class="flex items-center gap-2.5">
+                    <img
+                      src="assets/icons/star.svg"
+                      alt="rating icon"
+                      class="h-6 w-6 object-contain object-center"
+                    />
+                    <span class="leading-0 text-slate-500">(4.5)</span>
+                  </div>
+                  <h3
+                    class="border-b-2 border-transparent font-palanquin text-2xl font-bold leading-[1.05] transition group-hover:border-current"
+                  >
+                    Nike Cortez
+                  </h3>
+                  <p class="text-2xl font-semibold text-primary-tint">
+                    $180.60
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="group flex justify-center">
+              <div>
+                <figure class="mb-6">
+                  <img
+                    src="assets/images/shoe6.svg"
+                    alt="shoe4"
+                    class="transition-all group-hover:brightness-90"
+                  />
+                </figure>
+                <div class="flex flex-col items-start gap-2">
+                  <div class="flex items-center gap-2.5">
+                    <img
+                      src="assets/icons/star.svg"
+                      alt="rating icon"
+                      class="h-6 w-6 object-contain object-center"
+                    />
+                    <span class="leading-0 text-slate-500">(4.5)</span>
+                  </div>
+                  <h3
+                    class="border-b-2 border-transparent font-palanquin text-2xl font-bold leading-[1.05] transition group-hover:border-current"
+                  >
+                    Nike Air Max
+                  </h3>
+                  <p class="text-2xl font-semibold text-primary-tint">
+                    $150.25
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="group flex justify-center">
+              <div>
+                <figure class="mb-6">
+                  <img
+                    src="assets/images/shoe7.svg"
+                    alt="shoe4"
+                    class="transition-all group-hover:brightness-90"
+                  />
+                </figure>
+                <div class="flex flex-col items-start gap-2">
+                  <div class="flex items-center gap-2.5">
+                    <img
+                      src="assets/icons/star.svg"
+                      alt="rating icon"
+                      class="h-6 w-6 object-contain object-center"
+                    />
+                    <span class="leading-0 text-slate-500">(4.4)</span>
+                  </div>
+                  <h3
+                    class="border-b-2 border-transparent font-palanquin text-2xl font-bold leading-[1.05] transition group-hover:border-current"
+                  >
+                    Nike Air Force
+                  </h3>
+                  <p class="text-2xl font-semibold text-primary-tint">
+                    $120.10
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About US -->
     </main>
 
     <script src="js/main.js"></script>
