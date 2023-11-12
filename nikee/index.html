@@ -13,16 +13,16 @@
     <header class="max-container absolute inset-x-0 top-0 z-10 w-full py-8">
       <!-- Navbar -->
       <nav
-        class="padding-r padding-l flex items-center justify-between 3xl:pl-0"
+        class="padding-r padding-l 3xl:pl-0 flex items-center justify-between"
       >
         <a href="/">
           <img
             src="assets/images/header-logo.svg"
             alt="Logo"
-            class="h-auto w-24 sm:w-auto"
+            class="sm:w-auto h-auto w-24"
           />
         </a>
-        <ul class="hidden items-center justify-center gap-16 lg:flex">
+        <ul class="lg:flex hidden items-center justify-center gap-16">
           <li
             class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[102%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-primary before:transition before:duration-200 hover:before:scale-x-100"
           >
@@ -47,7 +47,7 @@
 
         <!-- Login/Signup -->
         <div
-          class="flex items-center gap-2 font-medium text-slate-800 sm:text-lg"
+          class="sm:text-lg flex items-center gap-2 font-medium text-slate-800"
         >
           <a href="#" class="transition hover:text-slate-600">Sign in</a>
           <span>/</span>
@@ -57,7 +57,7 @@
         <img
           src="assets/icons/hamburger.svg"
           alt="hamburger icon"
-          class="h-6 w-6 cursor-pointer lg:hidden"
+          class="lg:hidden h-6 w-6 cursor-pointer"
         />
       </nav>
     </header>
@@ -67,10 +67,10 @@
       <!-- Hero Section -->
       <section class="padding-b" id="home">
         <div
-          class="max-container flex min-h-screen flex-col items-start justify-center gap-12 xl:flex-row"
+          class="max-container xl:flex-row flex min-h-screen flex-col items-start justify-center gap-12"
         >
           <div
-            class="padding-l flex flex-col items-start justify-center pt-32 xl:w-2/5 3xl:pl-0"
+            class="padding-l xl:w-2/5 3xl:pl-0 flex flex-col items-start justify-center pt-32"
           >
             <p
               class="mb-6 font-palanquin text-sm uppercase tracking-wider text-primary"
@@ -78,9 +78,9 @@
               Our summer collections
             </p>
             <h1
-              class="mb-9 font-palanquin text-6xl font-bold leading-[1.10] lg:text-8xl lg:leading-[1.25] xl:whitespace-nowrap"
+              class="lg:text-8xl lg:leading-[1.25] xl:whitespace-nowrap mb-9 font-palanquin text-6xl font-bold leading-[1.10]"
             >
-              <span class="relative z-50 rounded xl:bg-white xl:pr-12"
+              <span class="xl:bg-white xl:pr-12 relative z-50 rounded"
                 >The New Arrival</span
               >
               <br />
@@ -88,7 +88,7 @@
               Shoes
             </h1>
             <p
-              class="mb-12 max-w-sm text-lg leading-loose text-slate-gray sm:max-w-md"
+              class="sm:max-w-md mb-12 max-w-sm text-lg leading-loose text-slate-gray"
             >
               Discover stylish Nike arrivals, quality comfort, and innovation
               for your active life.
@@ -98,18 +98,18 @@
               <img src="assets/icons/arrow-right.svg" alt="arrow right" />
             </a>
             <div class="mt-16 flex justify-start gap-10">
-              <div class="space-y-2.5 lg:space-y-3">
-                <p class="font-palanquin text-4xl font-bold lg:text-5xl">1k+</p>
+              <div class="lg:space-y-3 space-y-2.5">
+                <p class="lg:text-5xl font-palanquin text-4xl font-bold">1k+</p>
                 <p class="text-lg text-slate-gray">Brands</p>
               </div>
-              <div class="space-y-2.5 lg:space-y-3">
-                <p class="font-palanquin text-4xl font-bold lg:text-5xl">
+              <div class="lg:space-y-3 space-y-2.5">
+                <p class="lg:text-5xl font-palanquin text-4xl font-bold">
                   500+
                 </p>
                 <p class="text-lg text-slate-gray">Shops</p>
               </div>
-              <div class="space-y-2.5 lg:space-y-3">
-                <p class="font-palanquin text-4xl font-bold lg:text-5xl">
+              <div class="lg:space-y-3 space-y-2.5">
+                <p class="lg:text-5xl font-palanquin text-4xl font-bold">
                   250k+
                 </p>
                 <p class="text-lg text-slate-gray">Customers</p>
@@ -117,7 +117,7 @@
             </div>
           </div>
           <div
-            class="relative flex w-full flex-1 items-center justify-center bg-hero bg-cover bg-center py-40 xl:min-h-screen xl:py-40"
+            class="xl:min-h-screen xl:py-40 relative flex w-full flex-1 items-center justify-center bg-hero bg-cover bg-center py-40"
           >
             <img
               src="assets/images/big-shoe1.png"
@@ -127,7 +127,7 @@
 
             <!-- Add Shoe Changer here -->
             <div
-              class="absolute inset-x-6 -bottom-[5%] flex items-center gap-4 sm:inset-x-0 sm:left-[10%] sm:gap-8"
+              class="sm:inset-x-0 sm:left-[10%] sm:gap-8 absolute inset-x-6 -bottom-[5%] flex items-center gap-4"
             >
               <div
                 class="active group flex cursor-pointer items-center justify-center rounded-lg bg-card bg-cover bg-center px-4 py-6"
@@ -167,21 +167,21 @@
       <!-- Popular Products -->
       <section class="padding 3xl:px-0" id="products">
         <div class="max-container">
-          <div class="mb-12 flex flex-col items-center gap-8 lg:items-start">
+          <div class="lg:items-start mb-12 flex flex-col items-center gap-8">
             <h2
-              class="text-center font-palanquin text-4xl font-bold leading-tight sm:text-5xl lg:text-left lg:text-6xl"
+              class="sm:text-5xl lg:text-left lg:text-6xl text-center font-palanquin text-4xl font-bold leading-tight"
             >
               Our <span class="text-primary">Popular </span>Products
             </h2>
-            <p class="info-text max-w-md text-center lg:max-w-xl lg:text-left">
+            <p class="info-text lg:max-w-xl lg:text-left max-w-md text-center">
               Experience top-notch quality and style with our sought-after
               selections. Discover a world of comfort, design, and value
             </p>
           </div>
           <div
-            class="grid grid-cols-1 justify-center gap-12 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4"
+            class="sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 grid grid-cols-1 justify-center gap-12"
           >
-            <a href="#" class="group flex justify-center lg:justify-start">
+            <a href="#" class="lg:justify-start group flex justify-center">
               <div>
                 <figure class="mb-6">
                   <img
@@ -210,7 +210,7 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="group flex justify-center lg:justify-start">
+            <a href="#" class="lg:justify-start group flex justify-center">
               <div>
                 <figure class="mb-6">
                   <img
@@ -239,7 +239,7 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="group flex justify-center lg:justify-start">
+            <a href="#" class="lg:justify-start group flex justify-center">
               <div>
                 <figure class="mb-6">
                   <img
@@ -268,7 +268,7 @@
                 </div>
               </div>
             </a>
-            <a href="#" class="group flex justify-center lg:justify-start">
+            <a href="#" class="lg:justify-start group flex justify-center">
               <div>
                 <figure class="mb-6">
                   <img
@@ -304,25 +304,25 @@
       <!-- About Us -->
       <section class="padding 3xl:px-0" id="about-us">
         <div
-          class="max-container flex flex-col items-center justify-between gap-12 lg:flex-row"
+          class="max-container lg:flex-row flex flex-col items-center justify-between gap-12"
         >
           <div class="flex flex-1 shrink-0 flex-col items-start gap-8">
             <h2
-              class="font-palanquin text-4xl font-bold leading-tight sm:text-5xl xl:text-6xl"
+              class="sm:text-5xl xl:text-6xl font-palanquin text-4xl font-bold leading-tight"
             >
               We Provide You
               <span class="text-primary">Super Quality </span>Shoes
             </h2>
-            <p class="info-text break-words lg:max-w-2xl">
+            <p class="info-text lg:max-w-2xl break-words">
               Ensuring premium comfort and style, our meticulously crafted
               footwear is designed to elevate your experience, providing you
               with unmatched quality, innovation, and a touch of elegance.
             </p>
-            <p class="info-text break-words lg:max-w-2xl">
+            <p class="info-text lg:max-w-2xl break-words">
               Step into a realm of unparalleled comfort and trendsetting style.
               Our meticulously designed footwear blends quality and innovation.
             </p>
-            <p class="info-text break-words lg:max-w-2xl">
+            <p class="info-text lg:max-w-2xl break-words">
               Stride in style. Unmatched comfort. Elevate your walk with us.
             </p>
             <div class="mt-3">
@@ -333,8 +333,68 @@
             <img
               src="assets/images/shoe8.svg"
               alt="shoe8"
-              class="mx-auto w-4/5 lg:mx-0 lg:ml-auto"
+              class="lg:w-4/5 lg:mx-0 lg:ml-auto mx-auto w-[90%]"
             />
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="padding-x sm:py-12 3xl:px-0 py-8">
+        <div
+          class="max-container md:grid-cols-2 xl:grid-cols-3 lg:gap-10 grid grid-cols-1 gap-8"
+        >
+          <div
+            class="flex flex-col items-start gap-6 rounded-2xl px-12 py-16 shadow-3xl transition hover:bg-amber-50"
+          >
+            <div
+              class="flex shrink-0 items-center justify-center rounded-full bg-primary p-3.5"
+            >
+              <img
+                src="assets/icons/truck-fast.svg"
+                alt="truck-fast"
+                class="h-9 w-9"
+              />
+            </div>
+            <h3 class="font-palanquin text-3xl font-bold">Free Shipping</h3>
+            <p class="text-lg leading-loose text-slate-600">
+              Enjoy seamless shopping with our complimentary shipping service.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-start gap-6 rounded-2xl px-12 py-16 shadow-3xl transition hover:bg-amber-50"
+          >
+            <div
+              class="flex shrink-0 items-center justify-center rounded-full bg-primary p-3.5"
+            >
+              <img
+                src="assets/icons/shield-tick.svg"
+                alt="truck-fast"
+                class="h-9 w-9"
+              />
+            </div>
+            <h3 class="font-palanquin text-3xl font-bold">Secure Payment</h3>
+            <p class="text-lg leading-loose text-slate-600">
+              Experience worry-free transactions with our secure payment
+              options.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-start gap-6 rounded-2xl px-12 py-16 shadow-3xl transition hover:bg-amber-50"
+          >
+            <div
+              class="flex shrink-0 items-center justify-center rounded-full bg-primary p-3.5"
+            >
+              <img
+                src="assets/icons/support.svg"
+                alt="truck-fast"
+                class="h-9 w-9"
+              />
+            </div>
+            <h3 class="font-palanquin text-3xl font-bold">Love to help you</h3>
+            <p class="text-lg leading-loose text-slate-600">
+              Our dedicated team is here to assist you every step of the way..
+            </p>
           </div>
         </div>
       </section>
