@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -8,23 +8,113 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Simple Tailwind Starter</title>
   </head>
-  <body class="relative">
-    <header class="padding-x py-8 bg-blue-100">
-      <nav class="flex justify-between items-center">
+  <body class="relative text-slate-800">
+    <!-- Header Starts -->
+    <header
+      class="padding-x max-container absolute inset-x-0 top-0 z-10 w-full py-8"
+    >
+      <!-- Navbar -->
+      <nav class="hidden items-center justify-between md:flex">
         <a href="/">
           <img src="assets/images/header-logo.svg" alt="Logo" />
         </a>
+        <ul class="hidden items-center justify-center gap-16 lg:flex">
+          <li
+            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-coral-red before:transition before:duration-200 hover:before:scale-x-100"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-coral-red before:transition before:duration-200 hover:before:scale-x-100"
+          >
+            <a href="#">About Us</a>
+          </li>
+          <li
+            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-coral-red before:transition before:duration-200 hover:before:scale-x-100"
+          >
+            <a href="#">Products</a>
+          </li>
+          <li
+            class="group relative cursor-pointer text-lg text-slate-gray before:absolute before:inset-x-0 before:top-[104%] before:h-0.5 before:origin-left before:scale-x-0 before:bg-coral-red before:transition before:duration-200 hover:before:scale-x-100"
+          >
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Login/Signup -->
+        <div class="flex items-center gap-2 text-lg font-medium text-slate-800">
+          <a href="#" class="transition hover:text-slate-600">Sign in</a>
+          <span>/</span>
+          <a href="#" class="transition hover:text-slate-600">Explore now</a>
+        </div>
+
         <img
           src="assets/icons/hamburger.svg"
           alt="hamburger icon"
-          class="cursor-pointer w-32 h-8"
+          class="h-6 w-6 cursor-pointer lg:hidden"
         />
       </nav>
     </header>
 
-    <!-- <main>
+    <!-- Main Starts -->
+    <main>
+      <section class="xl:padding-l wide:padding-r padding-b">
+        <div
+          class="max-container padding-x flex min-h-screen flex-col items-start justify-center gap-12 pt-28 xl:flex-row xl:px-0"
+        >
+          <div
+            class="relative flex flex-col items-start justify-center xl:w-2/5"
+          >
+            <p class="mb-8 text-xl capitalize text-primary">
+              Our summer collections
+            </p>
+            <h1
+              class="text-7xl mb-9 font-palanquin font-bold leading-[1.15] lg:text-8xl lg:leading-[1.25] xl:whitespace-nowrap"
+            >
+              <span class="xl:bg-white xl:pl-2">The New Arrival</span>
+              <br />
+              <span class="text-primary">Nike</span>
+              Shoes
+            </h1>
+            <p class="mb-12 max-w-md text-lg leading-loose text-slate-gray">
+              Discover stylish Nike arrivals, quality comfort, and innovation
+              for your active life.
+            </p>
+            <a
+              href="#"
+              class="hover:bg-coral-red-shade text-gray-two hover:bg-primary-shade mb-16 flex items-center gap-3 rounded-full bg-primary px-8 py-3 text-lg font-medium transition hover:scale-105"
+            >
+              <span>Shop now</span>
+              <img src="assets/icons/arrow-right.svg" alt="arrow right" />
+            </a>
+            <div class="flex items-start justify-start gap-10">
+              <div class="space-y-2.5 lg:space-y-3">
+                <p class="lg:text-5xl font-palanquin text-4xl font-bold">1k+</p>
+                <p class="text-lg text-slate-gray">Brands</p>
+              </div>
+              <div class="space-y-2.5 lg:space-y-3">
+                <p class="lg:text-5xl font-palanquin text-4xl font-bold">
+                  500+
+                </p>
+                <p class="text-lg text-slate-gray">Shops</p>
+              </div>
+              <div class="space-y-2.5 lg:space-y-3">
+                <p class="lg:text-5xl font-palanquin text-4xl font-bold">
+                  250k+
+                </p>
+                <p class="text-lg text-slate-gray">Customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
 
-      <section class="xl:padding-l wide:padding-r padding-b"></section>
+<!-- <main>
+
+
 
       <section class="padding"></section>
 
@@ -39,5 +129,3 @@
       <section class="padding-x py-16 sm:py-32"></section>
     </main>
     <footer class="bg-black padding-x padding-t pb-8"></footer> -->
-  </body>
-</html>
