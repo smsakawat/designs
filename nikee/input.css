@@ -12,10 +12,9 @@
   }
 
   .input {
-    @apply max-sm:w-full max-sm:p-5 max-sm:border-slate-gray max-sm:rounded-full border pl-5 text-base leading-normal text-slate-gray outline-none sm:flex-1 sm:border-none;
+    @apply max-sm:p-5 w-full rounded-full border border-slate-gray pl-5 text-base leading-normal text-slate-gray outline-none sm:flex-1 sm:border-none;
   }
 }
-
 @layer utilities {
   .padding {
     @apply px-8 py-12 sm:px-16 sm:py-24;

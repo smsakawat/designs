@@ -948,6 +948,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -974,6 +979,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-snug {
   line-height: 1.375;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .tracking-tighter {
@@ -1405,7 +1414,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-color: rgb(55 65 81 / var(--tw-ring-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .sm\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .sm\:text-left {
+    text-align: left;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:leading-loose {
+    line-height: 2;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:h-16 {
     height: 4rem;
   }
@@ -1488,5 +1525,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:-tracking-wider {
+    letter-spacing: -0.05em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
   }
 }
